@@ -1,6 +1,6 @@
 # My Little RPG
 
-API ASP.NET Core qui génère les tuiles d'une carte de jeu de rôle et gère une liste de monstres, avec une page Web qui affiche la carte. Il s'agit de la 3<sup>e</sup> étape d'un projet construit par étapes.
+API ASP.NET Core qui génère, du côté de l'API, les tuiles d'une carte d'un jeu de type "RPG" qui sont découvertes au fur et à mesure qu'on bouge sur la carte. Des monstres (basés sur l'API gratuite PokéAPI) apparaissent sur la carte.
 
 **Technologies :** C#, ASP.NET Core 8, Entity Framework Core 8 (migrations), MySQL (Pomelo), Swagger, HTML, CSS, jQuery, Bootstrap
 
@@ -10,6 +10,7 @@ API ASP.NET Core qui génère les tuiles d'une carte de jeu de rôle et gère un
 - `GET`, `POST`, `PUT` et `DELETE` sur `/Monster` pour gérer les monstres.
 - Les images des tuiles sont servies par l'API (`/images/...`).
 
+![Visualisation WEB du jeu](docs/web.png)
 ![Documentation Swagger de l'API](docs/swagger.png)
 
 ## Lancer le projet
