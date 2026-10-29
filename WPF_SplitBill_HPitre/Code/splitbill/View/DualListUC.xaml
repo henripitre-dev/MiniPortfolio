@@ -1,0 +1,200 @@
+﻿<UserControl
+    x:Class="splitbill.View.DualListUC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:splitbill.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="root"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <Grid>
+
+        <!--  layout global : espace vide | gauche | boutons | droite | espace vide  -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="200" />
+            <!--  LEFT  -->
+            <ColumnDefinition Width="60" />
+            <!--  BUTTONS  -->
+            <ColumnDefinition Width="200" />
+            <!--  RIGHT  -->
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--#region LEFT : Items disponibles-->
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!--  titre  -->
+                <RowDefinition Height="*" />
+                <!--  liste  -->
+                <RowDefinition Height="Auto" />
+                <!--  hint  -->
+            </Grid.RowDefinitions>
+
+            <!--  titre  -->
+            <Label
+                Grid.Row="0"
+                Content="{Binding LeftTitle, ElementName=root}"
+                Style="{StaticResource LabelStyle}" />
+
+            <!--  liste des items disponibles  -->
+            <ListView
+                x:Name="AvailableListView"
+                Grid.Row="1"
+                ItemsSource="{Binding AvailableItems, ElementName=root}"
+                SelectionMode="Extended"
+                Style="{StaticResource ListViewStyle}" />
+
+            <!--  texte informatif (optionnel)  -->
+            <TextBlock
+                Grid.Row="2"
+                Margin="0,6"
+                HorizontalAlignment="Center"
+                FontFamily="Segoe UI"
+                FontSize="11"
+                Foreground="#ADADC8"
+                Text="{Binding HintText, ElementName=root}" />
+        </Grid>
+
+        <!--#endregion-->
+
+        <!--#region CENTER : Boutons de transfert-->
+
+        <!--  visible seulement si édition permise  -->
+        <StackPanel
+            Grid.Column="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Visibility="{Binding IsEditable, ElementName=root, Converter={StaticResource InverseBoolConverter}}">
+
+            <!--  déplacer sélection gauche -> droite  -->
+            <Button
+                Width="44"
+                Height="38"
+                Margin="0,0,0,10"
+                Padding="0"
+                Command="{Binding AssignSelectedCommand, ElementName=root}"
+                CommandParameter="{Binding SelectedItems, ElementName=AvailableListView}"
+                Style="{StaticResource PrimaryButton}"
+                ToolTip="Assigner la sélection">
+                <TextBlock FontSize="16" Text="→" />
+            </Button>
+
+            <!--  déplacer tout gauche -> droite  -->
+            <Button
+                Width="44"
+                Height="38"
+                Margin="0,0,0,24"
+                Padding="0"
+                Command="{Binding AssignAllCommand, ElementName=root}"
+                Style="{StaticResource SecondaryButton}"
+                ToolTip="Assigner tous">
+                <TextBlock
+                    FontFamily="Segoe UI"
+                    FontSize="16"
+                    Text="»" />
+            </Button>
+
+            <!--  déplacer sélection droite -> gauche  -->
+            <Button
+                Width="44"
+                Height="38"
+                Margin="0,0,0,10"
+                Padding="0"
+                Command="{Binding RemoveSelectedCommand, ElementName=root}"
+                CommandParameter="{Binding SelectedItems, ElementName=AssignedListView}"
+                Style="{StaticResource SecondaryButton}"
+                ToolTip="Retirer la sélection">
+                <TextBlock
+                    FontFamily="Segoe UI"
+                    FontSize="16"
+                    Text="←" />
+            </Button>
+
+            <!--  déplacer tout droite -> gauche  -->
+            <Button
+                Width="44"
+                Height="38"
+                Padding="0"
+                Command="{Binding RemoveAllCommand, ElementName=root}"
+                Style="{StaticResource SecondaryButton}"
+                ToolTip="Retirer tous">
+                <TextBlock
+                    FontFamily="Segoe UI"
+                    FontSize="16"
+                    Text="«" />
+            </Button>
+        </StackPanel>
+
+        <!--#endregion-->
+
+        <!--#region RIGHT : Items assignés-->
+
+        <Grid Grid.Column="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!--  header  -->
+                <RowDefinition Height="*" />
+                <!--  liste  -->
+                <RowDefinition Height="Auto" />
+                <!--  hint  -->
+            </Grid.RowDefinitions>
+
+            <!--  header avec compteur  -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!--  titre  -->
+                <Label
+                    Grid.Column="0"
+                    VerticalAlignment="Center"
+                    Content="{Binding RightTitle, ElementName=root}"
+                    Style="{StaticResource LabelStyle}" />
+
+                <!--  item count  -->
+                <Border
+                    Grid.Column="1"
+                    Padding="8,2"
+                    VerticalAlignment="Center"
+                    Background="#7C6FF7"
+                    CornerRadius="10">
+                    <TextBlock
+                        FontFamily="Segoe UI Semibold"
+                        FontSize="11"
+                        Foreground="White"
+                        Text="{Binding AssignedCount, ElementName=root}" />
+                </Border>
+            </Grid>
+
+            <!--  liste des items assignés  -->
+            <ListView
+                x:Name="AssignedListView"
+                Grid.Row="1"
+                ItemsSource="{Binding AssignedItems, ElementName=root}"
+                SelectionMode="Extended"
+                Style="{StaticResource ListViewStyle}" />
+
+            <!--  indice de fonctionnement  (hinttext)  -->
+            <TextBlock
+                Grid.Row="2"
+                Margin="0,6"
+                HorizontalAlignment="Center"
+                FontFamily="Segoe UI"
+                FontSize="11"
+                Foreground="#ADADC8"
+                Text="{Binding HintText, ElementName=root}" />
+        </Grid>
+
+        <!--#endregion-->
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,40 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {},
+    ".NETCoreApp,Version=v8.0/win-x64": {
+      "Bibliotheque/1.0.0": {
+        "dependencies": {
+          "BibliothequeFonctionsDeBase": "1.0.0"
+        },
+        "runtime": {
+          "Bibliotheque.dll": {}
+        }
+      },
+      "BibliothequeFonctionsDeBase/1.0.0": {
+        "runtime": {
+          "BibliothequeFonctionsDeBase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bibliotheque/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BibliothequeFonctionsDeBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

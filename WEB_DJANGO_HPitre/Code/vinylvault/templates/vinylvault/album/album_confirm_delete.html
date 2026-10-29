@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% block title %}{% translate "Supprimer" %}{% endblock %}
+{% block content %}
+    <h1>{% translate "Confirmer la suppression" %}</h1>
+    <p>{% blocktranslate with titre=album.titre %}Es-tu sûr de vouloir supprimer l'album <strong>{{ titre }}</strong> ?{% endblocktranslate %}</p>
+    <!-- show img si existante seulement sinon rien -->
+    {% if album.pochette %}
+    <div class="mb-3">
+        <img class="img-thumbnail album-cover-detail" src="{{ album.pochette }}" alt="{{ album.titre }}" />
+    </div>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% translate "Confirmer" %}</button>
+        <a href="{% url 'vinylvault:liste_albums' %}" class="btn btn-secondary">{% translate "Annuler" %}</a>
+    </form>
+{% endblock %}

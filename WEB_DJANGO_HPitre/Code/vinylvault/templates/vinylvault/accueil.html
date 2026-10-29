@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+{% load i18n %}
+    {% block title %}
+        {% translate "Accueil" %}
+    {% endblock %}
+    {% block content %}
+        <h1>{% translate "Bienvenue sur VinylVault" %}</h1>
+        <p>{% translate "Une collection d'albums partagé, triée selon tes goûts et uniformisée pour ton plus grand plaisir." %}</p>
+        <a href="{% url 'vinylvault:liste_albums' %}" class="btn btn-primary">{% translate "Explorer le catalogue" %}</a>
+    {% endblock %}

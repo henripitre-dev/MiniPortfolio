@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Bibliotheque.LibData.Author">
+    <Position X="13" Y="5.75" Width="4" />
+    <InheritanceLine Type="Bibliotheque.LibData.Humans" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.375" Y="3.661" />
+        <Point X="11.375" Y="5.375" />
+        <Point X="14.875" Y="5.375" />
+        <Point X="14.875" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAQAAABAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LibData\Author.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotheque.LibData.Employee">
+    <Position X="11.25" Y="8.5" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEAAAAAAAAgAQgAQAAAAAAAAAAgAAAApAAAABA=</HashCode>
+      <FileName>LibData\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotheque.LibData.Humans">
+    <Position X="9.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAAAAAAAAAIkAQAAAAAAABAAAAAAAAAAAAAg=</HashCode>
+      <FileName>LibData\humans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotheque.LibData.Livre">
+    <Position X="0.5" Y="0.5" Width="7.5" />
+    <TypeIdentifier>
+      <HashCode>AFAgACABAYAAAEECkMoAABAAAgBABAAABQkAAIAAgAA=</HashCode>
+      <FileName>LibData\Livre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotheque.LibData.Members">
+    <Position X="6.5" Y="8.5" Width="4.5" />
+    <InheritanceLine Type="Bibliotheque.LibData.Humans" FixedToPoint="true">
+      <Path>
+        <Point X="11.375" Y="3.661" />
+        <Point X="11.375" Y="8.125" />
+        <Point X="8.75" Y="8.125" />
+        <Point X="8.75" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAAAAAAAgAQAAAEQAAAAAAAAAAJAAAAJA=</HashCode>
+      <FileName>LibData\Members.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotheque.LibModel.Displays">
+    <Position X="18.25" Y="5.5" Width="6.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAEAAAAAAAAAAABAQCAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LibModel\Displays.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotheque.LibModel.Program">
+    <Position X="18.25" Y="0.5" Width="4.5" />
+    <NestedTypes>
+      <Class Name="Bibliotheque.LibModel.Program.StartLines" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>LibModel\Program.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAwEACAAAAAAgACQpAAAAAAAAAAAIBAEAABA=</HashCode>
+      <FileName>LibModel\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotheque.LibService.FileReader">
+    <Position X="23" Y="0.5" Width="5" />
+    <NestedTypes>
+      <Enum Name="Bibliotheque.LibService.FileReader.HumanTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>LibService\FileReader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Bibliotheque.LibService.FileReader.CsvTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>LibService\FileReader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IAAABgAAACAAIAAIAAAAAAAAAAgAgAAAAAAAAAQAAAA=</HashCode>
+      <FileName>LibService\FileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotheque.LibService.FileWriter">
+    <Position X="23" Y="3.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAhAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>LibService\FileWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

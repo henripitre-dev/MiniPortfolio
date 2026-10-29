@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% block title %}{% translate "Catalogue d'albums" %}{% endblock %}
+{% block content %}
+    <h1>{% translate "Catalogue d'albums" %}</h1>
+    <a href="{% url 'vinylvault:ajouter_album' %}" class="btn btn-primary mb-3">
+        {% translate "+ Ajouter un album" %}
+    </a>
+
+    {% if page_albums %}
+        <div class="row">
+            {% for album in page_albums %}
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-white bg-opacity-75 ">
+                        <!-- image du media sinon image par défaut du static -->
+                        {% if album.pochette %}
+                        <img src="{{ album.pochette }}" alt="{{ album.titre }}" class="card-img-top album-cover" />
+                        {% else %}
+                        <img src="{% static 'vinylvault/images/default-image.webp' %}" alt="{{ album.titre }}" class="card-img-top album-cover" />
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{% if album.pk in favoris_ids %} ⭐ {% endif %} {{ album.titre }}</h5>
+                            <p class="card-text">{{ album.artiste }} — {{ album.annee_sortie }}</p>
+
+                            <a href="{% url 'vinylvault:detail_album' pk=album.pk %}" class="btn btn-sm btn-outline-primary">
+                                {% translate "Voir les détails" %}
+                            </a>
+                        </div>
+                         <a href="{% url 'vinylvault:modifier_album' pk=album.pk %}"
+                        class="btn btn-sm btn-outline-secondary">
+                        {% translate "Modifier" %}
+                    </a>
+                    <a href="{% url 'vinylvault:supprimer_album' pk=album.pk %}" class="btn btn-sm btn-outline-danger">{% translate "Supprimer" %}</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% include 'vinylvault/includes/pagination_section.html' with page_items=page_albums %}
+
+    {% else %}
+        <p>{% translate "Aucun album pour l'instant." %}</p>
+    {% endif %}
+{% endblock %}

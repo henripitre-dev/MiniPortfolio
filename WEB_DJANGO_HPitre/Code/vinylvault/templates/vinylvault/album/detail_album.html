@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% block title %}{{ album.titre }}{% endblock %}
+{% block content %}
+    {% if infos.isFavori %}<span class="badge bg-secondary text-warning">⭐ {% translate "Ton coup de coeur!" %}</span>{% endif %}
+    <h1>{{ album.titre }}</h1>
+
+    <!-- image du media sinon image par défaut du static -->
+    {% if album.pochette %}
+    <img src="{{ album.pochette }}" alt="{{ album.titre }}" class="img-thumbnail album-cover-detail mb-3" />
+    {% else %}
+    <img src="{% static 'vinylvault/images/default-image.webp' %}" alt="{{ album.titre }}" class="img-thumbnail album-cover-detail mb-3" />
+    {% endif %}
+
+    <p><strong>{% translate "Artiste :" %}</strong> {{ album.artiste }}</p>
+    <p><strong>{% translate "Genre :" %}</strong> {{ album.genre|default:_("Non spécifié") }}</p>
+    <p><strong>{% translate "Année :" %}</strong> {{ album.annee_sortie }}</p>
+
+    <!-- section perso : change selon le user connecté -->
+    <div class="bg-dark text-white rounded-3 p-3 mb-3">
+        <h3>{% translate "Ma collection" %}</h3>
+        {% if user.is_authenticated %}
+            {% if not infos %}
+                <p class="small text-white-50">{% translate "Cet album n'est pas encore dans ta collection." %}</p>
+            {% endif %}
+            <form method="post" action="{% url 'vinylvault:modifier_infos_album' pk=album.pk %}" class="row g-2 align-items-end">
+                {% csrf_token %}
+                <div class="col-md-5">
+                    <label for="{{ form_infos.statut.id_for_label }}" class="form-label">{% translate "Statut" %}</label>
+                    {{ form_infos.statut }}
+                    {{ form_infos.statut.errors }}
+                </div>
+                <div class="col-md-2">
+                    <label for="{{ form_infos.note.id_for_label }}" class="form-label">{% translate "Ma note /5" %}</label>
+                    {{ form_infos.note }}
+                    {{ form_infos.note.errors }}
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check mb-2">
+                        {{ form_infos.isFavori }}
+                        <label for="{{ form_infos.isFavori.id_for_label }}" class="form-check-label">⭐ {% translate "Coup de coeur" %}</label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">{% translate "Enregistrer" %}</button>
+                </div>
+            </form>
+        {% else %}
+            <!-- texte avec un lien dedans : blocktranslate + variables simples (pas de point dans le nom) -->
+            {% url 'login' as login_url %}
+            <p class="mb-0">{% blocktranslate with next=request.path %}<a href="{{ login_url }}?next={{ next }}" class="link-light">Connecte-toi</a> pour ajouter cet album à ta collection, le noter ou en faire un coup de coeur.{% endblocktranslate %}</p>
+        {% endif %}
+    </div>
+
+    <h3>{% translate "Chansons" %}</h3>
+    <a href="{% url 'vinylvault:ajouter_chanson' album_pk=album.pk %}" class="btn btn-sm btn-primary mb-2">{% translate "+ Ajouter une chanson" %}</a>
+    {% if album.songs.all %}
+        <ul class="list-unstyled">
+            {% for song in album.songs.all %}
+                <li>{{ song.nb }}. {{ song.titre }} ({{ song.duree }})</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{% translate "Aucune chanson ajoutée pour cet album." %}</p>
+    {% endif %}
+
+    <a href="{% url 'vinylvault:liste_albums' %}" class="btn btn-secondary">{% translate "Retour à la liste" %}</a>
+{% endblock %}

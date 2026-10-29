@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "MyLittleRPG_Etape3": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:64984;http://localhost:64985"
+    }
+  }
+}

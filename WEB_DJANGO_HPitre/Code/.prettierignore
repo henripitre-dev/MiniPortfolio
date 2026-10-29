@@ -1,0 +1,2 @@
+# Ignorer les fichiers html dans template pour pas défaire le formattage
+**/templates/**/*.html

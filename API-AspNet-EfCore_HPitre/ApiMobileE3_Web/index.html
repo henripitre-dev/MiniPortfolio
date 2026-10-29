@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Visualisateur de Monde RPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="app.js" defer></script>
+
+    <!-- #region Link Refs -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"></script>
+    <!-- #endregion -->
+  </head>
+
+  <body class="bg-dark text-white">
+    <header>
+      <!--#region Titre/Soustitre -->
+      <div class="m-5 text-center rounded-pill bg-primary bg-opacity-10 p-3">
+        <h1>
+          <strong
+            ><i><u>🛡️⚔️ Visualisateur de Monde RPG ⚔️🛡️</u></i>
+          </strong>
+        </h1>
+        <p>
+          Explorez le monde généré par votre API |
+          <strong> 📍: <span id="posTop">(X,Y)</span></strong>
+        </p>
+      </div>
+      <!--#endregion-->
+    </header>
+
+    <div class="layout">
+      <aside class="m-4">
+        <!--#region Side Menu-->
+        <div class="rounded-5 bg-primary bg-opacity-10 p-4">
+          <h3><strong>📊Informations</strong></h3>
+          <hr />
+          <p
+            id="info-taille"
+            class="rounded-3 d-flex justify-content-between bg-white bg-opacity-10 p-2">
+            Taille du monde:
+            <span id="info-taille-value">50 × 50</span>
+          </p>
+          <p
+            id="info-zone"
+            class="rounded-3 d-flex justify-content-between bg-white bg-opacity-10 p-2">
+            Zone affichée:
+            <span id="info-zone-value">5x5 tuiles</span>
+          </p>
+          <p
+            id="info-status"
+            class="rounded-3 d-flex justify-content-between bg-white bg-opacity-10 p-2">
+            Statut API:
+            <strong
+              ><span id="info-status-value" style="color: limegreen"
+                >Connecté</span
+              ></strong
+            >
+          </p>
+          <p
+            id="info-chargees"
+            class="rounded-3 d-flex justify-content-between bg-white bg-opacity-10 p-2">
+            Tuiles chargées:
+            <span id="info-chargees-value">X</span>
+          </p>
+        </div>
+
+        <div class="rounded-5 bg-primary bg-opacity-10 p-4 mt-4">
+          <h3><strong>🧭 Navigation</strong></h3>
+          <hr />
+          <div class="d-flex flex-column align-items-center gap-2">
+            <button class="btn btn-light rounded-4 px-5 py-3" id="btn-nord">
+              N
+            </button>
+            <div class="d-flex gap-2">
+              <button
+                class="btn btn-light rounded-4 p-4 flex-fill px-4"
+                id="btn-ouest">
+                O
+              </button>
+              <button
+                class="btn btn-secondary rounded-4 p-3 flex-fill"
+                id="btn-actualiser">
+                🔄 Actualiser
+              </button>
+              <button
+                class="btn btn-light rounded-4 p-4 flex-fill px-4"
+                id="btn-est">
+                E
+              </button>
+            </div>
+            <button class="btn btn-light rounded-4 px-5 py-3" id="btn-sud">
+              S
+            </button>
+          </div>
+        </div>
+
+        <div class="rounded-5 bg-primary bg-opacity-10 p-4 mt-4">
+          <h3><strong>🏷️ Légende</strong></h3>
+          <hr />
+          <div
+            class="d-flex align-items-center gap-2 rounded-3 bg-white bg-opacity-10 p-2 mb-2">
+            <span
+              style="
+                width: 16px;
+                height: 16px;
+                background-color: limegreen;
+                display: inline-block;
+              "></span>
+            <span>Herbe</span>
+          </div>
+          <div
+            class="d-flex align-items-center gap-2 rounded-3 bg-white bg-opacity-10 p-2 mb-2">
+            <span
+              style="
+                width: 16px;
+                height: 16px;
+                background-color: blue;
+                display: inline-block;
+              "></span>
+            <span>Eau</span>
+          </div>
+          <div
+            class="d-flex align-items-center gap-2 rounded-3 bg-white bg-opacity-10 p-2 mb-2">
+            <span
+              style="
+                width: 16px;
+                height: 16px;
+                background-color: gray;
+                display: inline-block;
+              "></span>
+            <span>Montagne</span>
+          </div>
+          <div
+            class="d-flex align-items-center gap-2 rounded-3 bg-white bg-opacity-10 p-2 mb-2">
+            <span
+              style="
+                width: 16px;
+                height: 16px;
+                background-color: darkgreen;
+                display: inline-block;
+              "></span>
+            <span>Forêt</span>
+          </div>
+          <div
+            class="d-flex align-items-center gap-2 rounded-3 bg-white bg-opacity-10 p-2 mb-2">
+            <span
+              style="
+                width: 16px;
+                height: 16px;
+                background-color: orange;
+                display: inline-block;
+              "></span>
+            <span>Ville</span>
+          </div>
+          <div
+            class="d-flex align-items-center gap-2 rounded-3 bg-white bg-opacity-10 p-2 mb-2">
+            <span
+              style="
+                width: 16px;
+                height: 16px;
+                background-color: tan;
+                display: inline-block;
+              "></span>
+            <span>Route</span>
+          </div>
+          <hr />
+          <div
+            class="d-flex align-items-center gap-2 rounded-3 bg-white bg-opacity-10 p-2">
+            <span
+              style="
+                width: 16px;
+                height: 16px;
+                background-color: black;
+                display: inline-block;
+              "></span>
+            <span>Non traversable</span>
+          </div>
+        </div>
+
+        <div class="rounded-5 bg-primary bg-opacity-10 p-4 mt-4">
+          <h3><strong>🎯 Tuile sélectionnée</strong></h3>
+          <hr />
+          <p
+            id="tuile-pos"
+            class="rounded-3 d-flex justify-content-between bg-white bg-opacity-10 p-2">
+            Position:
+            <span id="tuile-pos-value">(X,Y)</span>
+          </p>
+          <p
+            id="tuile-type"
+            class="rounded-3 d-flex justify-content-between bg-white bg-opacity-10 p-2">
+            Type:
+            <span id="tuile-type-value">X</span>
+          </p>
+          <p
+            id="tuile-passable"
+            class="rounded-3 d-flex justify-content-between bg-white bg-opacity-10 p-2">
+            Traversable:
+            <span id="tuile-passable-value">✅/❌</span>
+          </p>
+          <div class="bg-white bg-opacity-10 p-2 rounded-4">
+            <p
+              id="tuile-desc"
+              class="rounded-3 d-flex justify-content-between pt-2 px-2">
+              Description:
+            </p>
+            <div
+              id="tuile-desc-value"
+              class="rounded-3 px-3 py-2 bg-opacity-10 bg-white">
+              Tuile [type] en position (X,Y)
+            </div>
+          </div>
+        </div>
+        <!--#endregion-->
+      </aside>
+      <main class="m-4 bg-primary rounded-5 p-3 bg-opacity-10">
+        <!--#region Map-->
+        <div class="d-flex gap-2">
+          <h2 class="mb-0">🗺️Carte du Monde</h2>
+          <small
+            id="zone-affiche"
+            class="bg-dark ms-auto px-4 py-2 bg-opacity-40 rounded-pill text-white">
+            <strong>Zone: (10,10)➡️(15,15) </strong>
+          </small>
+        </div>
+
+        <!--Map container filled in js-->
+        <div id="map-grid"></div>
+        <!--#endregion-->
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% translate "Votre compte" %}{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid member-app">
+    <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto">
+            <h2>{% translate "Vos informations de compte" %}</h2>
+            <br />
+
+            <form method="POST">
+                <div class="form-group">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+
+                    <p><a href="{% url 'password_edit' %}">{% translate "Modifier votre mot de passe" %}</a></p>
+
+                    <a href="{% url 'vinylvault:accueil' %}" class="btn btn-secondary">{% translate "Annuler" %}</a>
+                    <button type="submit" class="btn btn-primary">{% translate "Confirmer" %} <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </form>
+            <br />
+        </div>
+    </div>
+</div>
+
+{% endblock %}

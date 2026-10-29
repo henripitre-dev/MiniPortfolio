@@ -1,0 +1,3849 @@
+[
+  {
+    "model": "vinylvault.genre",
+    "pk": 1,
+    "fields": {
+      "nom": "Rock",
+      "nom_fr_ca": "Rock",
+      "nom_en_ca": "Rock"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 2,
+    "fields": {
+      "nom": "Pop",
+      "nom_fr_ca": "Pop",
+      "nom_en_ca": "Pop"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 3,
+    "fields": {
+      "nom": "Hip-hop",
+      "nom_fr_ca": "Hip-hop",
+      "nom_en_ca": "Hip-hop"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 4,
+    "fields": {
+      "nom": "Jazz",
+      "nom_fr_ca": "Jazz",
+      "nom_en_ca": "Jazz"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 5,
+    "fields": {
+      "nom": "Électronique",
+      "nom_fr_ca": "Électronique",
+      "nom_en_ca": "Electronic"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 6,
+    "fields": {
+      "nom": "Métal",
+      "nom_fr_ca": "Métal",
+      "nom_en_ca": "Metal"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 7,
+    "fields": {
+      "nom": "R&B",
+      "nom_fr_ca": "R&B",
+      "nom_en_ca": "R&B"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 8,
+    "fields": {
+      "nom": "Soul",
+      "nom_fr_ca": "Soul",
+      "nom_en_ca": "Soul"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 9,
+    "fields": {
+      "nom": "Reggae",
+      "nom_fr_ca": "Reggae",
+      "nom_en_ca": "Reggae"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 10,
+    "fields": {
+      "nom": "Folk",
+      "nom_fr_ca": "Folk",
+      "nom_en_ca": "Folk"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 11,
+    "fields": {
+      "nom": "Chanson française",
+      "nom_fr_ca": "Chanson française",
+      "nom_en_ca": "French chanson"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 12,
+    "fields": {
+      "nom": "Alternatif",
+      "nom_fr_ca": "Alternatif",
+      "nom_en_ca": "Alternative"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 13,
+    "fields": {
+      "nom": "Punk",
+      "nom_fr_ca": "Punk",
+      "nom_en_ca": "Punk"
+    }
+  },
+  {
+    "model": "vinylvault.genre",
+    "pk": 14,
+    "fields": {
+      "nom": "Musique latine",
+      "nom_fr_ca": "Musique latine",
+      "nom_en_ca": "Latin"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 1,
+    "fields": {
+      "nom": "Daft Punk",
+      "pays": "France",
+      "pays_fr_ca": "France",
+      "pays_en_ca": "France"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 2,
+    "fields": {
+      "nom": "Justice",
+      "pays": "France",
+      "pays_fr_ca": "France",
+      "pays_en_ca": "France"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 3,
+    "fields": {
+      "nom": "The Beatles",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 4,
+    "fields": {
+      "nom": "Pink Floyd",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 5,
+    "fields": {
+      "nom": "Led Zeppelin",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 6,
+    "fields": {
+      "nom": "Queen",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 7,
+    "fields": {
+      "nom": "David Bowie",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 8,
+    "fields": {
+      "nom": "Fleetwood Mac",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 9,
+    "fields": {
+      "nom": "Eagles",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 10,
+    "fields": {
+      "nom": "AC/DC",
+      "pays": "Australie",
+      "pays_fr_ca": "Australie",
+      "pays_en_ca": "Australia"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 11,
+    "fields": {
+      "nom": "Guns N' Roses",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 12,
+    "fields": {
+      "nom": "U2",
+      "pays": "Irlande",
+      "pays_fr_ca": "Irlande",
+      "pays_en_ca": "Ireland"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 13,
+    "fields": {
+      "nom": "Red Hot Chili Peppers",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 14,
+    "fields": {
+      "nom": "Nirvana",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 15,
+    "fields": {
+      "nom": "Radiohead",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 16,
+    "fields": {
+      "nom": "Arcade Fire",
+      "pays": "Canada",
+      "pays_fr_ca": "Canada",
+      "pays_en_ca": "Canada"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 17,
+    "fields": {
+      "nom": "Metallica",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 18,
+    "fields": {
+      "nom": "The Clash",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 19,
+    "fields": {
+      "nom": "Green Day",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 20,
+    "fields": {
+      "nom": "Michael Jackson",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 21,
+    "fields": {
+      "nom": "Stromae",
+      "pays": "Belgique",
+      "pays_fr_ca": "Belgique",
+      "pays_en_ca": "Belgium"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 22,
+    "fields": {
+      "nom": "Adele",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 23,
+    "fields": {
+      "nom": "Taylor Swift",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 24,
+    "fields": {
+      "nom": "Billie Eilish",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 25,
+    "fields": {
+      "nom": "Céline Dion",
+      "pays": "Canada",
+      "pays_fr_ca": "Canada",
+      "pays_en_ca": "Canada"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 26,
+    "fields": {
+      "nom": "BTS",
+      "pays": "Corée du Sud",
+      "pays_fr_ca": "Corée du Sud",
+      "pays_en_ca": "South Korea"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 27,
+    "fields": {
+      "nom": "Kendrick Lamar",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 28,
+    "fields": {
+      "nom": "Drake",
+      "pays": "Canada",
+      "pays_fr_ca": "Canada",
+      "pays_en_ca": "Canada"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 29,
+    "fields": {
+      "nom": "The Weeknd",
+      "pays": "Canada",
+      "pays_fr_ca": "Canada",
+      "pays_en_ca": "Canada"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 30,
+    "fields": {
+      "nom": "Lauryn Hill",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 31,
+    "fields": {
+      "nom": "Miles Davis",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 32,
+    "fields": {
+      "nom": "John Coltrane",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 33,
+    "fields": {
+      "nom": "The Dave Brubeck Quartet",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 34,
+    "fields": {
+      "nom": "Marvin Gaye",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 35,
+    "fields": {
+      "nom": "Stevie Wonder",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 36,
+    "fields": {
+      "nom": "Amy Winehouse",
+      "pays": "Royaume-Uni",
+      "pays_fr_ca": "Royaume-Uni",
+      "pays_en_ca": "United Kingdom"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 37,
+    "fields": {
+      "nom": "Bob Marley & The Wailers",
+      "pays": "Jamaïque",
+      "pays_fr_ca": "Jamaïque",
+      "pays_en_ca": "Jamaica"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 38,
+    "fields": {
+      "nom": "Bob Dylan",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 39,
+    "fields": {
+      "nom": "Simon & Garfunkel",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 40,
+    "fields": {
+      "nom": "Leonard Cohen",
+      "pays": "Canada",
+      "pays_fr_ca": "Canada",
+      "pays_en_ca": "Canada"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 41,
+    "fields": {
+      "nom": "Joni Mitchell",
+      "pays": "Canada",
+      "pays_fr_ca": "Canada",
+      "pays_en_ca": "Canada"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 42,
+    "fields": {
+      "nom": "Bon Iver",
+      "pays": "États-Unis",
+      "pays_fr_ca": "États-Unis",
+      "pays_en_ca": "United States"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 43,
+    "fields": {
+      "nom": "Serge Gainsbourg",
+      "pays": "France",
+      "pays_fr_ca": "France",
+      "pays_en_ca": "France"
+    }
+  },
+  {
+    "model": "vinylvault.artiste",
+    "pk": 44,
+    "fields": {
+      "nom": "Bad Bunny",
+      "pays": "Porto Rico",
+      "pays_fr_ca": "Porto Rico",
+      "pays_en_ca": "Puerto Rico"
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 1,
+    "fields": {
+      "titre": "Random Access Memories",
+      "artiste": 1,
+      "genre": 5,
+      "annee_sortie": 2013,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/5000a285-b67e-4cfc-b54b-2b98f1810d2e/46361185179-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 1,
+    "fields": {
+      "album": 1,
+      "titre": "Give Life Back to Music",
+      "duree": "4:34",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 2,
+    "fields": {
+      "album": 1,
+      "titre": "The Game of Love",
+      "duree": "5:21",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 3,
+    "fields": {
+      "album": 1,
+      "titre": "Giorgio by Moroder",
+      "duree": "9:04",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 4,
+    "fields": {
+      "album": 1,
+      "titre": "Within",
+      "duree": "3:48",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 5,
+    "fields": {
+      "album": 1,
+      "titre": "Instant Crush",
+      "duree": "5:37",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 2,
+    "fields": {
+      "titre": "Discovery",
+      "artiste": 1,
+      "genre": 5,
+      "annee_sortie": 2001,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/6cd30d99-4923-4d5e-8e51-9d87506976f1/43702618964-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 6,
+    "fields": {
+      "album": 2,
+      "titre": "One More Time",
+      "duree": "5:20",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 7,
+    "fields": {
+      "album": 2,
+      "titre": "Aerodynamic",
+      "duree": "3:27",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 8,
+    "fields": {
+      "album": 2,
+      "titre": "Digital Love",
+      "duree": "4:58",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 9,
+    "fields": {
+      "album": 2,
+      "titre": "Harder, Better, Faster, Stronger",
+      "duree": "3:44",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 10,
+    "fields": {
+      "album": 2,
+      "titre": "Crescendolls",
+      "duree": "3:31",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 3,
+    "fields": {
+      "titre": "†",
+      "artiste": 2,
+      "genre": 5,
+      "annee_sortie": 2007,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/4642ee19-7790-3c8d-ab5e-d133de942db6/25581637829-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 11,
+    "fields": {
+      "album": 3,
+      "titre": "Genesis",
+      "duree": "3:54",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 12,
+    "fields": {
+      "album": 3,
+      "titre": "Let There Be Light",
+      "duree": "4:55",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 13,
+    "fields": {
+      "album": 3,
+      "titre": "D.A.N.C.E.",
+      "duree": "4:02",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 14,
+    "fields": {
+      "album": 3,
+      "titre": "Newjack",
+      "duree": "3:56",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 15,
+    "fields": {
+      "album": 3,
+      "titre": "Phantom",
+      "duree": "4:22",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 4,
+    "fields": {
+      "titre": "Abbey Road",
+      "artiste": 3,
+      "genre": 1,
+      "annee_sortie": 1969,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/31765b9f-e969-4257-855f-c7ea1f657b2a/39706767821-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 16,
+    "fields": {
+      "album": 4,
+      "titre": "Come Together",
+      "duree": "4:20",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 17,
+    "fields": {
+      "album": 4,
+      "titre": "Something",
+      "duree": "3:03",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 18,
+    "fields": {
+      "album": 4,
+      "titre": "Maxwell's Silver Hammer",
+      "duree": "3:27",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 19,
+    "fields": {
+      "album": 4,
+      "titre": "Oh! Darling",
+      "duree": "3:26",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 20,
+    "fields": {
+      "album": 4,
+      "titre": "Octopus's Garden",
+      "duree": "2:51",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 5,
+    "fields": {
+      "titre": "The Dark Side of the Moon",
+      "artiste": 4,
+      "genre": 1,
+      "annee_sortie": 1973,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/956fbc58-362d-43b8-b880-3779e0508559/34025419985-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 21,
+    "fields": {
+      "album": 5,
+      "titre": "Speak to Me",
+      "duree": "1:07",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 22,
+    "fields": {
+      "album": 5,
+      "titre": "Breathe",
+      "duree": "2:49",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 23,
+    "fields": {
+      "album": 5,
+      "titre": "On the Run",
+      "duree": "3:45",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 24,
+    "fields": {
+      "album": 5,
+      "titre": "Time",
+      "duree": "6:53",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 25,
+    "fields": {
+      "album": 5,
+      "titre": "The Great Gig in the Sky",
+      "duree": "4:44",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 6,
+    "fields": {
+      "titre": "Wish You Were Here",
+      "artiste": 4,
+      "genre": 1,
+      "annee_sortie": 1975,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/ab775ce9-93b7-43d1-b6a6-7d7af6d8193f/12699578857-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 26,
+    "fields": {
+      "album": 6,
+      "titre": "Shine On You Crazy Diamond (Parts I–V)",
+      "duree": "13:30",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 27,
+    "fields": {
+      "album": 6,
+      "titre": "Welcome to the Machine",
+      "duree": "7:30",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 28,
+    "fields": {
+      "album": 6,
+      "titre": "Have a Cigar",
+      "duree": "5:08",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 29,
+    "fields": {
+      "album": 6,
+      "titre": "Wish You Were Here",
+      "duree": "5:34",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 30,
+    "fields": {
+      "album": 6,
+      "titre": "Shine On You Crazy Diamond (Parts VI–IX)",
+      "duree": "12:29",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 7,
+    "fields": {
+      "titre": "Led Zeppelin IV",
+      "artiste": 5,
+      "genre": 1,
+      "annee_sortie": 1971,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/959621bf-6536-4f37-a60d-148168d98700/26862237165-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 31,
+    "fields": {
+      "album": 7,
+      "titre": "Black Dog",
+      "duree": "4:54",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 32,
+    "fields": {
+      "album": 7,
+      "titre": "Rock and Roll",
+      "duree": "3:40",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 33,
+    "fields": {
+      "album": 7,
+      "titre": "The Battle of Evermore",
+      "duree": "5:51",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 34,
+    "fields": {
+      "album": 7,
+      "titre": "Stairway to Heaven",
+      "duree": "8:02",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 35,
+    "fields": {
+      "album": 7,
+      "titre": "Misty Mountain Hop",
+      "duree": "4:38",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 8,
+    "fields": {
+      "titre": "A Night at the Opera",
+      "artiste": 6,
+      "genre": 1,
+      "annee_sortie": 1975,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/90d2e40a-eee0-4290-aa0a-a5ae3683ea2f/2812830852-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 36,
+    "fields": {
+      "album": 8,
+      "titre": "Death on Two Legs (Dedicated to...)",
+      "duree": "3:43",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 37,
+    "fields": {
+      "album": 8,
+      "titre": "Lazing on a Sunday Afternoon",
+      "duree": "1:08",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 38,
+    "fields": {
+      "album": 8,
+      "titre": "I'm in Love with My Car",
+      "duree": "3:05",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 39,
+    "fields": {
+      "album": 8,
+      "titre": "You're My Best Friend",
+      "duree": "2:50",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 40,
+    "fields": {
+      "album": 8,
+      "titre": "'39",
+      "duree": "3:30",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 9,
+    "fields": {
+      "titre": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+      "artiste": 7,
+      "genre": 1,
+      "annee_sortie": 1972,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/a8f17a5b-eaf3-48da-986e-7f3efdaf3db6/7121875119-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 41,
+    "fields": {
+      "album": 9,
+      "titre": "Five Years",
+      "duree": "4:42",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 42,
+    "fields": {
+      "album": 9,
+      "titre": "Soul Love",
+      "duree": "3:34",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 43,
+    "fields": {
+      "album": 9,
+      "titre": "Moonage Daydream",
+      "duree": "4:40",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 44,
+    "fields": {
+      "album": 9,
+      "titre": "Starman",
+      "duree": "4:10",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 45,
+    "fields": {
+      "album": 9,
+      "titre": "It Ain't Easy",
+      "duree": "2:58",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 10,
+    "fields": {
+      "titre": "Rumours",
+      "artiste": 8,
+      "genre": 1,
+      "annee_sortie": 1977,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/7699b503-6a69-4920-91ac-8ee8aa1c1622/7946930592-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 46,
+    "fields": {
+      "album": 10,
+      "titre": "Second Hand News",
+      "duree": "2:43",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 47,
+    "fields": {
+      "album": 10,
+      "titre": "Dreams",
+      "duree": "4:14",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 48,
+    "fields": {
+      "album": 10,
+      "titre": "Never Going Back Again",
+      "duree": "2:02",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 49,
+    "fields": {
+      "album": 10,
+      "titre": "Don't Stop",
+      "duree": "3:11",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 50,
+    "fields": {
+      "album": 10,
+      "titre": "Go Your Own Way",
+      "duree": "3:38",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 11,
+    "fields": {
+      "titre": "Hotel California",
+      "artiste": 9,
+      "genre": 1,
+      "annee_sortie": 1976,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/fa7d3357-f3e9-4da5-ad70-09c05ef8207f/18785014502-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 51,
+    "fields": {
+      "album": 11,
+      "titre": "Hotel California",
+      "duree": "6:30",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 52,
+    "fields": {
+      "album": 11,
+      "titre": "New Kid in Town",
+      "duree": "5:04",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 53,
+    "fields": {
+      "album": 11,
+      "titre": "Life in the Fast Lane",
+      "duree": "4:46",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 54,
+    "fields": {
+      "album": 11,
+      "titre": "Wasted Time",
+      "duree": "4:55",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 55,
+    "fields": {
+      "album": 11,
+      "titre": "Wasted Time (Reprise)",
+      "duree": "1:22",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 12,
+    "fields": {
+      "titre": "Back in Black",
+      "artiste": 10,
+      "genre": 1,
+      "annee_sortie": 1980,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/38914b29-7788-4cff-80b7-1ced523f8675/11333065513-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 56,
+    "fields": {
+      "album": 12,
+      "titre": "Hells Bells",
+      "duree": "5:12",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 57,
+    "fields": {
+      "album": 12,
+      "titre": "Shoot to Thrill",
+      "duree": "5:17",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 58,
+    "fields": {
+      "album": 12,
+      "titre": "What Do You Do for Money Honey",
+      "duree": "3:35",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 59,
+    "fields": {
+      "album": 12,
+      "titre": "Givin the Dog a Bone",
+      "duree": "3:31",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 60,
+    "fields": {
+      "album": 12,
+      "titre": "Let Me Put My Love into You",
+      "duree": "4:15",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 13,
+    "fields": {
+      "titre": "Appetite for Destruction",
+      "artiste": 11,
+      "genre": 1,
+      "annee_sortie": 1987,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/f4a7ccdf-f299-4040-83ec-796ef239fee7/32868884113-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 61,
+    "fields": {
+      "album": 13,
+      "titre": "Welcome to the Jungle",
+      "duree": "4:31",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 62,
+    "fields": {
+      "album": 13,
+      "titre": "It's So Easy",
+      "duree": "3:21",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 63,
+    "fields": {
+      "album": 13,
+      "titre": "Nightrain",
+      "duree": "4:26",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 64,
+    "fields": {
+      "album": 13,
+      "titre": "Out ta Get Me",
+      "duree": "4:20",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 65,
+    "fields": {
+      "album": 13,
+      "titre": "Mr. Brownstone",
+      "duree": "3:46",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 14,
+    "fields": {
+      "titre": "The Joshua Tree",
+      "artiste": 12,
+      "genre": 1,
+      "annee_sortie": 1987,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/5853f9e0-f0f3-4299-9d13-e081486a33fe/11985925703-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 66,
+    "fields": {
+      "album": 14,
+      "titre": "Where the Streets Have No Name",
+      "duree": "5:38",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 67,
+    "fields": {
+      "album": 14,
+      "titre": "I Still Haven't Found What I'm Looking For",
+      "duree": "4:38",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 68,
+    "fields": {
+      "album": 14,
+      "titre": "With or Without You",
+      "duree": "4:56",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 69,
+    "fields": {
+      "album": 14,
+      "titre": "Bullet the Blue Sky",
+      "duree": "4:32",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 70,
+    "fields": {
+      "album": 14,
+      "titre": "Running to Stand Still",
+      "duree": "4:18",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 15,
+    "fields": {
+      "titre": "Californication",
+      "artiste": 13,
+      "genre": 1,
+      "annee_sortie": 1999,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/058dcfa5-4921-4055-87b0-f541eb4adb08/15837297520-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 71,
+    "fields": {
+      "album": 15,
+      "titre": "Around the World",
+      "duree": "3:58",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 72,
+    "fields": {
+      "album": 15,
+      "titre": "Parallel Universe",
+      "duree": "4:30",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 73,
+    "fields": {
+      "album": 15,
+      "titre": "Scar Tissue",
+      "duree": "3:37",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 74,
+    "fields": {
+      "album": 15,
+      "titre": "Otherside",
+      "duree": "4:15",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 75,
+    "fields": {
+      "album": 15,
+      "titre": "Get on Top",
+      "duree": "3:18",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 16,
+    "fields": {
+      "titre": "Nevermind",
+      "artiste": 14,
+      "genre": 12,
+      "annee_sortie": 1991,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/c771f7fc-9e62-4349-a2e3-ceaf7122bf5b/30501372565-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 76,
+    "fields": {
+      "album": 16,
+      "titre": "Smells Like Teen Spirit",
+      "duree": "5:01",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 77,
+    "fields": {
+      "album": 16,
+      "titre": "In Bloom",
+      "duree": "4:14",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 78,
+    "fields": {
+      "album": 16,
+      "titre": "Come as You Are",
+      "duree": "3:39",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 79,
+    "fields": {
+      "album": 16,
+      "titre": "Breed",
+      "duree": "3:03",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 80,
+    "fields": {
+      "album": 16,
+      "titre": "Lithium",
+      "duree": "4:17",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 17,
+    "fields": {
+      "titre": "OK Computer",
+      "artiste": 15,
+      "genre": 12,
+      "annee_sortie": 1997,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d/43287476628-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 81,
+    "fields": {
+      "album": 17,
+      "titre": "Airbag",
+      "duree": "4:44",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 82,
+    "fields": {
+      "album": 17,
+      "titre": "Paranoid Android",
+      "duree": "6:23",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 83,
+    "fields": {
+      "album": 17,
+      "titre": "Subterranean Homesick Alien",
+      "duree": "4:27",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 84,
+    "fields": {
+      "album": 17,
+      "titre": "Exit Music (For a Film)",
+      "duree": "4:24",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 85,
+    "fields": {
+      "album": 17,
+      "titre": "Let Down",
+      "duree": "4:59",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 18,
+    "fields": {
+      "titre": "Kid A",
+      "artiste": 15,
+      "genre": 12,
+      "annee_sortie": 2000,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/0e8a1994-f0a7-481d-9be2-6c2f80e14de5/29475045164-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 86,
+    "fields": {
+      "album": 18,
+      "titre": "Everything in Its Right Place",
+      "duree": "4:11",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 87,
+    "fields": {
+      "album": 18,
+      "titre": "Kid A",
+      "duree": "4:44",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 88,
+    "fields": {
+      "album": 18,
+      "titre": "The National Anthem",
+      "duree": "5:50",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 89,
+    "fields": {
+      "album": 18,
+      "titre": "How to Disappear Completely",
+      "duree": "5:56",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 90,
+    "fields": {
+      "album": 18,
+      "titre": "Treefingers",
+      "duree": "3:42",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 19,
+    "fields": {
+      "titre": "Funeral",
+      "artiste": 16,
+      "genre": 12,
+      "annee_sortie": 2004,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/58c07638-4343-4ad7-ac37-da79f6aeb8e1/31589070944-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 91,
+    "fields": {
+      "album": 19,
+      "titre": "Neighborhood #1 (Tunnels)",
+      "duree": "4:48",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 92,
+    "fields": {
+      "album": 19,
+      "titre": "Neighborhood #2 (Laïka)",
+      "duree": "3:32",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 93,
+    "fields": {
+      "album": 19,
+      "titre": "Une année sans lumière",
+      "duree": "3:40",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 94,
+    "fields": {
+      "album": 19,
+      "titre": "Neighborhood #3 (Power Out)",
+      "duree": "5:12",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 95,
+    "fields": {
+      "album": 19,
+      "titre": "Neighborhood #4 (7 Kettles)",
+      "duree": "4:49",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 20,
+    "fields": {
+      "titre": "Master of Puppets",
+      "artiste": 17,
+      "genre": 6,
+      "annee_sortie": 1986,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/1ac12ae0-d1ae-41e7-8514-07cb36d5c493/43409244175-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 96,
+    "fields": {
+      "album": 20,
+      "titre": "Battery",
+      "duree": "5:12",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 97,
+    "fields": {
+      "album": 20,
+      "titre": "Master of Puppets",
+      "duree": "8:35",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 98,
+    "fields": {
+      "album": 20,
+      "titre": "The Thing That Should Not Be",
+      "duree": "6:36",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 99,
+    "fields": {
+      "album": 20,
+      "titre": "Welcome Home (Sanitarium)",
+      "duree": "6:27",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 100,
+    "fields": {
+      "album": 20,
+      "titre": "Disposable Heroes",
+      "duree": "8:16",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 21,
+    "fields": {
+      "titre": "Metallica",
+      "artiste": 17,
+      "genre": 6,
+      "annee_sortie": 1991,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/11c5d045-ef45-4aaa-ba38-e43fd82a6345/30537963089-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 101,
+    "fields": {
+      "album": 21,
+      "titre": "Enter Sandman",
+      "duree": "5:31",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 102,
+    "fields": {
+      "album": 21,
+      "titre": "Sad but True",
+      "duree": "5:24",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 103,
+    "fields": {
+      "album": 21,
+      "titre": "Holier Than Thou",
+      "duree": "3:47",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 104,
+    "fields": {
+      "album": 21,
+      "titre": "The Unforgiven",
+      "duree": "6:26",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 105,
+    "fields": {
+      "album": 21,
+      "titre": "Wherever I May Roam",
+      "duree": "6:44",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 22,
+    "fields": {
+      "titre": "London Calling",
+      "artiste": 18,
+      "genre": 13,
+      "annee_sortie": 1979,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/7bec22a0-eb73-4b79-a619-b253d5c2af87/44824441588-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 106,
+    "fields": {
+      "album": 22,
+      "titre": "London Calling",
+      "duree": "3:19",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 107,
+    "fields": {
+      "album": 22,
+      "titre": "Brand New Cadillac",
+      "duree": "2:09",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 108,
+    "fields": {
+      "album": 22,
+      "titre": "Jimmy Jazz",
+      "duree": "3:52",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 109,
+    "fields": {
+      "album": 22,
+      "titre": "Hateful",
+      "duree": "2:45",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 110,
+    "fields": {
+      "album": 22,
+      "titre": "Rudie Can't Fail",
+      "duree": "3:26",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 23,
+    "fields": {
+      "titre": "Dookie",
+      "artiste": 19,
+      "genre": 13,
+      "annee_sortie": 1994,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/20fef8d3-72b5-369a-9712-ad0b1ee6d226/7378765590-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 111,
+    "fields": {
+      "album": 23,
+      "titre": "Burnout",
+      "duree": "2:07",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 112,
+    "fields": {
+      "album": 23,
+      "titre": "Having a Blast",
+      "duree": "2:44",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 113,
+    "fields": {
+      "album": 23,
+      "titre": "Chump",
+      "duree": "2:54",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 114,
+    "fields": {
+      "album": 23,
+      "titre": "Longview",
+      "duree": "3:59",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 115,
+    "fields": {
+      "album": 23,
+      "titre": "Welcome to Paradise",
+      "duree": "3:44",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 24,
+    "fields": {
+      "titre": "Thriller",
+      "artiste": 20,
+      "genre": 2,
+      "annee_sortie": 1982,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/e1b94ba6-c63c-4c2d-8928-9d1a525b7000/22018478497-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 116,
+    "fields": {
+      "album": 24,
+      "titre": "Wanna Be Startin' Somethin'",
+      "duree": "6:03",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 117,
+    "fields": {
+      "album": 24,
+      "titre": "Baby Be Mine",
+      "duree": "4:20",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 118,
+    "fields": {
+      "album": 24,
+      "titre": "The Girl Is Mine",
+      "duree": "3:42",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 119,
+    "fields": {
+      "album": 24,
+      "titre": "Thriller",
+      "duree": "5:57",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 120,
+    "fields": {
+      "album": 24,
+      "titre": "Beat It",
+      "duree": "4:18",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 25,
+    "fields": {
+      "titre": "Off the Wall",
+      "artiste": 20,
+      "genre": 2,
+      "annee_sortie": 1979,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/2910604e-ebf2-48b3-aa0b-44e64a2150c9/28339166629-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 121,
+    "fields": {
+      "album": 25,
+      "titre": "Don't Stop 'Til You Get Enough",
+      "duree": "6:05",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 122,
+    "fields": {
+      "album": 25,
+      "titre": "Rock with You",
+      "duree": "3:40",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 123,
+    "fields": {
+      "album": 25,
+      "titre": "Workin' Day and Night",
+      "duree": "5:14",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 124,
+    "fields": {
+      "album": 25,
+      "titre": "Get on the Floor",
+      "duree": "4:39",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 125,
+    "fields": {
+      "album": 25,
+      "titre": "Off the Wall",
+      "duree": "4:05",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 26,
+    "fields": {
+      "titre": "Racine carrée",
+      "artiste": 21,
+      "genre": 2,
+      "annee_sortie": 2013,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/b1574416-8c3e-4585-a7c2-e9fd0aec0a86/44960909256-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 126,
+    "fields": {
+      "album": 26,
+      "titre": "Ta fête",
+      "duree": "2:56",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 127,
+    "fields": {
+      "album": 26,
+      "titre": "Papaoutai",
+      "duree": "3:52",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 128,
+    "fields": {
+      "album": 26,
+      "titre": "Bâtard",
+      "duree": "3:28",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 129,
+    "fields": {
+      "album": 26,
+      "titre": "Ave Cesaria",
+      "duree": "4:07",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 130,
+    "fields": {
+      "album": 26,
+      "titre": "Tous les mêmes",
+      "duree": "3:33",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 27,
+    "fields": {
+      "titre": "21",
+      "artiste": 22,
+      "genre": 2,
+      "annee_sortie": 2011,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/d0a60bc8-b4e9-4f1c-b9b5-c84c284493c4/34029007881-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 131,
+    "fields": {
+      "album": 27,
+      "titre": "Rolling in the Deep",
+      "duree": "3:48",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 132,
+    "fields": {
+      "album": 27,
+      "titre": "Rumour Has It",
+      "duree": "3:43",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 133,
+    "fields": {
+      "album": 27,
+      "titre": "Turning Tables",
+      "duree": "4:10",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 134,
+    "fields": {
+      "album": 27,
+      "titre": "Don't You Remember",
+      "duree": "4:03",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 135,
+    "fields": {
+      "album": 27,
+      "titre": "Set Fire to the Rain",
+      "duree": "4:01",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 28,
+    "fields": {
+      "titre": "1989",
+      "artiste": 23,
+      "genre": 2,
+      "annee_sortie": 2014,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/d5cb50d8-8897-4029-b9b3-32806df7e06d/9282848916-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 136,
+    "fields": {
+      "album": 28,
+      "titre": "Welcome to New York",
+      "duree": "3:32",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 137,
+    "fields": {
+      "album": 28,
+      "titre": "Blank Space",
+      "duree": "3:51",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 138,
+    "fields": {
+      "album": 28,
+      "titre": "Style",
+      "duree": "3:51",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 139,
+    "fields": {
+      "album": 28,
+      "titre": "Out of the Woods",
+      "duree": "3:55",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 140,
+    "fields": {
+      "album": 28,
+      "titre": "All You Had to Do Was Stay",
+      "duree": "3:13",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 29,
+    "fields": {
+      "titre": "When We All Fall Asleep, Where Do We Go?",
+      "artiste": 24,
+      "genre": 2,
+      "annee_sortie": 2019,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/e5e6642c-7814-4e02-9c68-7734b21c1f63/32734888823-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 141,
+    "fields": {
+      "album": 29,
+      "titre": "!!!!!!!",
+      "duree": "0:13",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 142,
+    "fields": {
+      "album": 29,
+      "titre": "bad guy",
+      "duree": "3:14",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 143,
+    "fields": {
+      "album": 29,
+      "titre": "xanny",
+      "duree": "4:03",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 144,
+    "fields": {
+      "album": 29,
+      "titre": "you should see me in a crown",
+      "duree": "3:00",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 145,
+    "fields": {
+      "album": 29,
+      "titre": "all the good girls go to hell",
+      "duree": "2:48",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 30,
+    "fields": {
+      "titre": "Falling into You",
+      "artiste": 25,
+      "genre": 2,
+      "annee_sortie": 1996,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/e956e8b3-09ea-499f-9a12-b51518bc7d82/7913088796-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 146,
+    "fields": {
+      "album": 30,
+      "titre": "It's All Coming Back to Me Now",
+      "duree": "7:37",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 147,
+    "fields": {
+      "album": 30,
+      "titre": "Because You Loved Me",
+      "duree": "4:33",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 148,
+    "fields": {
+      "album": 30,
+      "titre": "Falling into You",
+      "duree": "4:18",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 149,
+    "fields": {
+      "album": 30,
+      "titre": "Make You Happy",
+      "duree": "4:31",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 150,
+    "fields": {
+      "album": 30,
+      "titre": "Seduces Me",
+      "duree": "3:46",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 31,
+    "fields": {
+      "titre": "Map of the Soul: 7",
+      "artiste": 26,
+      "genre": 2,
+      "annee_sortie": 2020,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/bdf973ab-5a6b-452c-91c5-df0706526d71/25478145851-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 151,
+    "fields": {
+      "album": 31,
+      "titre": "Intro : Persona",
+      "duree": "2:51",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 152,
+    "fields": {
+      "album": 31,
+      "titre": "Boy With Luv (feat. Halsey)",
+      "duree": "3:49",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 153,
+    "fields": {
+      "album": 31,
+      "titre": "Make It Right",
+      "duree": "3:46",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 154,
+    "fields": {
+      "album": 31,
+      "titre": "Jamais Vu",
+      "duree": "3:47",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 155,
+    "fields": {
+      "album": 31,
+      "titre": "Dionysus",
+      "duree": "4:09",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 32,
+    "fields": {
+      "titre": "To Pimp a Butterfly",
+      "artiste": 27,
+      "genre": 3,
+      "annee_sortie": 2015,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/b4d6e526-4195-49bc-b660-b6df4c27686e/45334112812-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 156,
+    "fields": {
+      "album": 32,
+      "titre": "Wesley's Theory",
+      "duree": "4:47",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 157,
+    "fields": {
+      "album": 32,
+      "titre": "For Free? (Interlude)",
+      "duree": "2:10",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 158,
+    "fields": {
+      "album": 32,
+      "titre": "King Kunta",
+      "duree": "3:54",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 159,
+    "fields": {
+      "album": 32,
+      "titre": "Institutionalized",
+      "duree": "4:31",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 160,
+    "fields": {
+      "album": 32,
+      "titre": "These Walls",
+      "duree": "5:00",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 33,
+    "fields": {
+      "titre": "good kid, m.A.A.d city",
+      "artiste": 27,
+      "genre": 3,
+      "annee_sortie": 2012,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/ceb01f3f-3a63-4ad7-ad9e-7b9bd18f82d2/46277696375-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 161,
+    "fields": {
+      "album": 33,
+      "titre": "Sherane a.k.a Master Splinter's Daughter",
+      "duree": "4:33",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 162,
+    "fields": {
+      "album": 33,
+      "titre": "Bitch, Don't Kill My Vibe",
+      "duree": "5:10",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 163,
+    "fields": {
+      "album": 33,
+      "titre": "Backseat Freestyle",
+      "duree": "3:32",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 164,
+    "fields": {
+      "album": 33,
+      "titre": "The Art of Peer Pressure",
+      "duree": "5:24",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 165,
+    "fields": {
+      "album": 33,
+      "titre": "Money Trees",
+      "duree": "6:26",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 34,
+    "fields": {
+      "titre": "Take Care",
+      "artiste": 28,
+      "genre": 3,
+      "annee_sortie": 2011,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/1e268632-6b5a-4592-bd60-64be3276d104/39501156583-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 166,
+    "fields": {
+      "album": 34,
+      "titre": "Over My Dead Body",
+      "duree": "4:32",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 167,
+    "fields": {
+      "album": 34,
+      "titre": "Shot for Me",
+      "duree": "3:44",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 168,
+    "fields": {
+      "album": 34,
+      "titre": "Headlines",
+      "duree": "3:56",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 169,
+    "fields": {
+      "album": 34,
+      "titre": "Crew Love",
+      "duree": "3:28",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 170,
+    "fields": {
+      "album": 34,
+      "titre": "Take Care",
+      "duree": "4:37",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 35,
+    "fields": {
+      "titre": "After Hours",
+      "artiste": 29,
+      "genre": 7,
+      "annee_sortie": 2020,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/19e4f6cc-ca0c-4897-8dfc-a36914b7f998/25720993837-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 171,
+    "fields": {
+      "album": 35,
+      "titre": "Alone Again",
+      "duree": "4:10",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 172,
+    "fields": {
+      "album": 35,
+      "titre": "Too Late",
+      "duree": "3:59",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 173,
+    "fields": {
+      "album": 35,
+      "titre": "Hardest to Love",
+      "duree": "3:31",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 174,
+    "fields": {
+      "album": 35,
+      "titre": "Scared to Live",
+      "duree": "3:11",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 175,
+    "fields": {
+      "album": 35,
+      "titre": "Snowchild",
+      "duree": "4:07",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 36,
+    "fields": {
+      "titre": "The Miseducation of Lauryn Hill",
+      "artiste": 30,
+      "genre": 7,
+      "annee_sortie": 1998,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/4f931a2b-98eb-49bb-94b7-0ec62dcfe644/5356827241-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 176,
+    "fields": {
+      "album": 36,
+      "titre": "Intro",
+      "duree": "0:47",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 177,
+    "fields": {
+      "album": 36,
+      "titre": "Lost Ones",
+      "duree": "5:33",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 178,
+    "fields": {
+      "album": 36,
+      "titre": "Ex-Factor",
+      "duree": "5:26",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 179,
+    "fields": {
+      "album": 36,
+      "titre": "To Zion",
+      "duree": "6:09",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 180,
+    "fields": {
+      "album": 36,
+      "titre": "Doo Wop (That Thing)",
+      "duree": "5:20",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 37,
+    "fields": {
+      "titre": "Kind of Blue",
+      "artiste": 31,
+      "genre": 4,
+      "annee_sortie": 1959,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/e7ba3cb7-a074-45ee-870f-3baeb6d3e8bf/12708426541-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 181,
+    "fields": {
+      "album": 37,
+      "titre": "So What",
+      "duree": "9:22",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 182,
+    "fields": {
+      "album": 37,
+      "titre": "Freddie Freeloader",
+      "duree": "9:46",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 183,
+    "fields": {
+      "album": 37,
+      "titre": "Blue in Green",
+      "duree": "5:37",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 184,
+    "fields": {
+      "album": 37,
+      "titre": "All Blues",
+      "duree": "11:33",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 185,
+    "fields": {
+      "album": 37,
+      "titre": "Flamenco Sketches",
+      "duree": "9:26",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 38,
+    "fields": {
+      "titre": "A Love Supreme",
+      "artiste": 32,
+      "genre": 4,
+      "annee_sortie": 1965,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/38ad8234-305a-4c5d-8286-c55fb5c0392a/12686384195-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 186,
+    "fields": {
+      "album": 38,
+      "titre": "Part I – Acknowledgement",
+      "duree": "7:47",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 187,
+    "fields": {
+      "album": 38,
+      "titre": "Part II – Resolution",
+      "duree": "7:22",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 188,
+    "fields": {
+      "album": 38,
+      "titre": "Part III – Pursuance",
+      "duree": "10:42",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 189,
+    "fields": {
+      "album": 38,
+      "titre": "Part IV – Psalm",
+      "duree": "7:05",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 39,
+    "fields": {
+      "titre": "Time Out",
+      "artiste": 33,
+      "genre": 4,
+      "annee_sortie": 1959,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/12aa8a07-6bb7-4b8d-9857-50fa9f2e7c13/29462664186-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 190,
+    "fields": {
+      "album": 39,
+      "titre": "Blue Rondo à la Turk",
+      "duree": "6:44",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 191,
+    "fields": {
+      "album": 39,
+      "titre": "Strange Meadow Lark",
+      "duree": "7:22",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 192,
+    "fields": {
+      "album": 39,
+      "titre": "Take Five",
+      "duree": "5:24",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 193,
+    "fields": {
+      "album": 39,
+      "titre": "Three to Get Ready",
+      "duree": "5:24",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 194,
+    "fields": {
+      "album": 39,
+      "titre": "Kathy's Waltz",
+      "duree": "4:48",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 40,
+    "fields": {
+      "titre": "What's Going On",
+      "artiste": 34,
+      "genre": 8,
+      "annee_sortie": 1971,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/ba91f9e2-2391-4bbd-9114-c9eff138fd98/23121356179-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 195,
+    "fields": {
+      "album": 40,
+      "titre": "What's Going On",
+      "duree": "3:53",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 196,
+    "fields": {
+      "album": 40,
+      "titre": "What's Happening Brother",
+      "duree": "2:43",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 197,
+    "fields": {
+      "album": 40,
+      "titre": "Flyin' High (In the Friendly Sky)",
+      "duree": "3:49",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 198,
+    "fields": {
+      "album": 40,
+      "titre": "Save the Children",
+      "duree": "4:03",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 199,
+    "fields": {
+      "album": 40,
+      "titre": "God Is Love",
+      "duree": "1:41",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 41,
+    "fields": {
+      "titre": "Songs in the Key of Life",
+      "artiste": 35,
+      "genre": 8,
+      "annee_sortie": 1976,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/8bf1769c-b081-4a70-ac6d-9a97c83ad135/39110820929-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 200,
+    "fields": {
+      "album": 41,
+      "titre": "Love's in Need of Love Today",
+      "duree": "7:05",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 201,
+    "fields": {
+      "album": 41,
+      "titre": "Have a Talk with God",
+      "duree": "2:42",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 202,
+    "fields": {
+      "album": 41,
+      "titre": "Village Ghetto Land",
+      "duree": "1:45",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 203,
+    "fields": {
+      "album": 41,
+      "titre": "Contusion",
+      "duree": "3:45",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 204,
+    "fields": {
+      "album": 41,
+      "titre": "Sir Duke",
+      "duree": "3:54",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 42,
+    "fields": {
+      "titre": "Back to Black",
+      "artiste": 36,
+      "genre": 8,
+      "annee_sortie": 2006,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/ccf4da26-ea82-462f-b753-88bb976fd40e/36926439244-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 205,
+    "fields": {
+      "album": 42,
+      "titre": "Rehab",
+      "duree": "3:34",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 206,
+    "fields": {
+      "album": 42,
+      "titre": "You Know I'm No Good",
+      "duree": "4:17",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 207,
+    "fields": {
+      "album": 42,
+      "titre": "Me & Mr Jones",
+      "duree": "2:33",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 208,
+    "fields": {
+      "album": 42,
+      "titre": "Just Friends",
+      "duree": "3:13",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 209,
+    "fields": {
+      "album": 42,
+      "titre": "Back to Black",
+      "duree": "4:01",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 43,
+    "fields": {
+      "titre": "Exodus",
+      "artiste": 37,
+      "genre": 9,
+      "annee_sortie": 1977,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/9fe22563-212b-41b1-b5e4-5505db4eb6ff/46195852333-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 210,
+    "fields": {
+      "album": 43,
+      "titre": "Natural Mystic",
+      "duree": "3:28",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 211,
+    "fields": {
+      "album": 43,
+      "titre": "So Much Things to Say",
+      "duree": "3:08",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 212,
+    "fields": {
+      "album": 43,
+      "titre": "Guiltiness",
+      "duree": "3:19",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 213,
+    "fields": {
+      "album": 43,
+      "titre": "The Heathen",
+      "duree": "2:32",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 214,
+    "fields": {
+      "album": 43,
+      "titre": "Exodus",
+      "duree": "7:40",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 44,
+    "fields": {
+      "titre": "Highway 61 Revisited",
+      "artiste": 38,
+      "genre": 10,
+      "annee_sortie": 1965,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/a898d848-03d9-47c9-8ffe-71541b26f826/42934888201-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 215,
+    "fields": {
+      "album": 44,
+      "titre": "Like a Rolling Stone",
+      "duree": "6:13",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 216,
+    "fields": {
+      "album": 44,
+      "titre": "Tombstone Blues",
+      "duree": "5:58",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 217,
+    "fields": {
+      "album": 44,
+      "titre": "It Takes a Lot to Laugh, It Takes a Train to Cry",
+      "duree": "4:09",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 218,
+    "fields": {
+      "album": 44,
+      "titre": "From a Buick 6",
+      "duree": "3:19",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 219,
+    "fields": {
+      "album": 44,
+      "titre": "Ballad of a Thin Man",
+      "duree": "5:58",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 45,
+    "fields": {
+      "titre": "Bridge over Troubled Water",
+      "artiste": 39,
+      "genre": 10,
+      "annee_sortie": 1970,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/82b19c9b-07e0-49c1-97e3-363510c26a30/18257588738-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 220,
+    "fields": {
+      "album": 45,
+      "titre": "Bridge over Troubled Water",
+      "duree": "4:52",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 221,
+    "fields": {
+      "album": 45,
+      "titre": "El Condor Pasa (If I Could)",
+      "duree": "3:06",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 222,
+    "fields": {
+      "album": 45,
+      "titre": "Cecilia",
+      "duree": "2:55",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 223,
+    "fields": {
+      "album": 45,
+      "titre": "Keep the Customer Satisfied",
+      "duree": "2:33",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 224,
+    "fields": {
+      "album": 45,
+      "titre": "So Long, Frank Lloyd Wright",
+      "duree": "3:41",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 46,
+    "fields": {
+      "titre": "Songs of Leonard Cohen",
+      "artiste": 40,
+      "genre": 10,
+      "annee_sortie": 1967,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/2fc159df-d05b-44f6-9659-51136c3ba66b/2144230905-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 225,
+    "fields": {
+      "album": 46,
+      "titre": "Suzanne",
+      "duree": "3:48",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 226,
+    "fields": {
+      "album": 46,
+      "titre": "Master Song",
+      "duree": "5:55",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 227,
+    "fields": {
+      "album": 46,
+      "titre": "Winter Lady",
+      "duree": "2:15",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 228,
+    "fields": {
+      "album": 46,
+      "titre": "The Stranger Song",
+      "duree": "5:00",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 229,
+    "fields": {
+      "album": 46,
+      "titre": "Sisters of Mercy",
+      "duree": "3:35",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 47,
+    "fields": {
+      "titre": "Blue",
+      "artiste": 41,
+      "genre": 10,
+      "annee_sortie": 1971,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/d87c6632-f385-4bef-91f8-f7bb2fbabc2e/38571480291-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 230,
+    "fields": {
+      "album": 47,
+      "titre": "All I Want",
+      "duree": "3:32",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 231,
+    "fields": {
+      "album": 47,
+      "titre": "My Old Man",
+      "duree": "3:33",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 232,
+    "fields": {
+      "album": 47,
+      "titre": "Little Green",
+      "duree": "3:25",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 233,
+    "fields": {
+      "album": 47,
+      "titre": "Carey",
+      "duree": "3:00",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 234,
+    "fields": {
+      "album": 47,
+      "titre": "Blue",
+      "duree": "3:00",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 48,
+    "fields": {
+      "titre": "For Emma, Forever Ago",
+      "artiste": 42,
+      "genre": 10,
+      "annee_sortie": 2007,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/f2d4a53b-0612-48e2-a09c-02489ae27a51/11344065108-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 235,
+    "fields": {
+      "album": 48,
+      "titre": "Flume",
+      "duree": "3:39",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 236,
+    "fields": {
+      "album": 48,
+      "titre": "Lump Sum",
+      "duree": "3:21",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 237,
+    "fields": {
+      "album": 48,
+      "titre": "Skinny Love",
+      "duree": "3:58",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 238,
+    "fields": {
+      "album": 48,
+      "titre": "The Wolves (Act I and II)",
+      "duree": "5:22",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 239,
+    "fields": {
+      "album": 48,
+      "titre": "Blindsided",
+      "duree": "5:29",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 49,
+    "fields": {
+      "titre": "Histoire de Melody Nelson",
+      "artiste": 43,
+      "genre": 11,
+      "annee_sortie": 1971,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/6052c614-0ee0-444b-aa00-705b2dfab4d4/16379498992-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 240,
+    "fields": {
+      "album": 49,
+      "titre": "Melody",
+      "duree": "7:33",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 241,
+    "fields": {
+      "album": 49,
+      "titre": "Ballade de Melody Nelson",
+      "duree": "2:01",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 242,
+    "fields": {
+      "album": 49,
+      "titre": "Valse de Melody",
+      "duree": "1:31",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 243,
+    "fields": {
+      "album": 49,
+      "titre": "Ah ! Melody",
+      "duree": "1:47",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 244,
+    "fields": {
+      "album": 49,
+      "titre": "L'hôtel particulier",
+      "duree": "4:06",
+      "nb": 5
+    }
+  },
+  {
+    "model": "vinylvault.album",
+    "pk": 50,
+    "fields": {
+      "titre": "Un Verano Sin Ti",
+      "artiste": 44,
+      "genre": 14,
+      "annee_sortie": 2022,
+      "image": "",
+      "image_url": "https://coverartarchive.org/release/aded3f90-b758-451a-aad7-711d5985b05f/32432776461-500.jpg"
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 245,
+    "fields": {
+      "album": 50,
+      "titre": "Moscow Mule",
+      "duree": "4:05",
+      "nb": 1
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 246,
+    "fields": {
+      "album": 50,
+      "titre": "Después de la Playa",
+      "duree": "3:50",
+      "nb": 2
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 247,
+    "fields": {
+      "album": 50,
+      "titre": "Me Porto Bonito",
+      "duree": "2:58",
+      "nb": 3
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 248,
+    "fields": {
+      "album": 50,
+      "titre": "Tití Me Preguntó",
+      "duree": "4:03",
+      "nb": 4
+    }
+  },
+  {
+    "model": "vinylvault.song",
+    "pk": 249,
+    "fields": {
+      "album": 50,
+      "titre": "Un Ratito",
+      "duree": "2:56",
+      "nb": 5
+    }
+  },
+  {
+    "model": "auth.group",
+    "fields": {
+      "name": "Collectionneurs",
+      "permissions": [
+        [
+          "view_artiste",
+          "vinylvault",
+          "artiste"
+        ],
+        [
+          "add_artiste",
+          "vinylvault",
+          "artiste"
+        ],
+        [
+          "change_artiste",
+          "vinylvault",
+          "artiste"
+        ],
+        [
+          "view_genre",
+          "vinylvault",
+          "genre"
+        ],
+        [
+          "add_genre",
+          "vinylvault",
+          "genre"
+        ],
+        [
+          "change_genre",
+          "vinylvault",
+          "genre"
+        ],
+        [
+          "view_album",
+          "vinylvault",
+          "album"
+        ],
+        [
+          "add_album",
+          "vinylvault",
+          "album"
+        ],
+        [
+          "change_album",
+          "vinylvault",
+          "album"
+        ],
+        [
+          "view_song",
+          "vinylvault",
+          "song"
+        ],
+        [
+          "add_song",
+          "vinylvault",
+          "song"
+        ],
+        [
+          "change_song",
+          "vinylvault",
+          "song"
+        ],
+        [
+          "view_albumutilisateur",
+          "vinylvault",
+          "albumutilisateur"
+        ],
+        [
+          "add_albumutilisateur",
+          "vinylvault",
+          "albumutilisateur"
+        ],
+        [
+          "change_albumutilisateur",
+          "vinylvault",
+          "albumutilisateur"
+        ]
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "fields": {
+      "name": "Gestionnaires",
+      "permissions": [
+        [
+          "view_artiste",
+          "vinylvault",
+          "artiste"
+        ],
+        [
+          "add_artiste",
+          "vinylvault",
+          "artiste"
+        ],
+        [
+          "change_artiste",
+          "vinylvault",
+          "artiste"
+        ],
+        [
+          "delete_artiste",
+          "vinylvault",
+          "artiste"
+        ],
+        [
+          "view_genre",
+          "vinylvault",
+          "genre"
+        ],
+        [
+          "add_genre",
+          "vinylvault",
+          "genre"
+        ],
+        [
+          "change_genre",
+          "vinylvault",
+          "genre"
+        ],
+        [
+          "delete_genre",
+          "vinylvault",
+          "genre"
+        ],
+        [
+          "view_album",
+          "vinylvault",
+          "album"
+        ],
+        [
+          "add_album",
+          "vinylvault",
+          "album"
+        ],
+        [
+          "change_album",
+          "vinylvault",
+          "album"
+        ],
+        [
+          "delete_album",
+          "vinylvault",
+          "album"
+        ],
+        [
+          "view_song",
+          "vinylvault",
+          "song"
+        ],
+        [
+          "add_song",
+          "vinylvault",
+          "song"
+        ],
+        [
+          "change_song",
+          "vinylvault",
+          "song"
+        ],
+        [
+          "delete_song",
+          "vinylvault",
+          "song"
+        ],
+        [
+          "view_albumutilisateur",
+          "vinylvault",
+          "albumutilisateur"
+        ],
+        [
+          "add_albumutilisateur",
+          "vinylvault",
+          "albumutilisateur"
+        ],
+        [
+          "change_albumutilisateur",
+          "vinylvault",
+          "albumutilisateur"
+        ],
+        [
+          "delete_albumutilisateur",
+          "vinylvault",
+          "albumutilisateur"
+        ]
+      ]
+    }
+  }
+]

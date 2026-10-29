@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiBiblio_Serveur</name>
+    </assembly>
+    <members>
+        <member name="M:ApiBiblio_Serveur.Controllers.AuteurController.Get">
+            <summary>
+            Récupère la liste complète des auteurs.
+            api/v1/auteur
+            </summary>
+            <returns>Une liste de tous les objets Auteurs.</returns>
+            <response code="200">La liste a été récupérée avec succès. </response>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.AuteurController.Get(System.Int32)">
+            <summary>
+            Récupère un Auteur spécifique à l'aide de son identifiant unique.
+            </summary>
+            <param name="id">L'identifiant numérique du Auteur à obtenir. </param>
+            <returns>L'objet Auteur correspondant à l'ID. </returns>
+            <response code="200">Auteur trouvé et retourné. </response>
+            <response code="404">Aucun auteur trouvé avec cet identifiant. </response>
+            <response code="500">Erreur interne du serveur. </response>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.AuteurController.Post(ApiBiblio_Serveur.Models.Auteur)">
+             <summary>
+             Crée un nouveau Auteur dans la base de données.
+             api/v1/auteur/ + body
+             </summary>
+            <param name="a">L'objet Auteur à insérer.</param>
+             <response code="201">Le Auteur a été créé avec succès.</response>
+             <response code="400">Les données fournies sont invalides.</response>
+             <response code="500">Erreur interne du serveur. </response>///
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.AuteurController.Put(System.Int32,ApiBiblio_Serveur.Models.Auteur)">
+            <summary>
+            Modifie un Auteur existant dans la base de données en utilisant son identifiant unique.
+            </summary>
+            <param name="id">Auteur à modifier</param>
+            <param name="a">Objet auteur modifié</param>
+            <response code="200">Le Auteur a été modifié avec succès.</response>
+            <response code="400">Les données fournies sont invalides.</response>
+            <response code="500">Erreur interne du serveur. </response>///
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.AuteurController.Delete(System.Int32)">
+            <summary>
+            Supprime un auteur de l'inventaire en fournissant son identifiant unique.
+            api/v1/auteur/{id}
+            </summary>
+            <param name="id">L'identifiant unique du auteur à supprimer. </param>
+            <response code="204">Suppression reussie (aucun contenu retourne) .</response>
+            <response code="404">Aucun auteur trouve avec cet identifiant. </response>
+            <response code="409">Le auteur est en cours d'utilisation ou entraîne un conflit de suppression. </response> //TODO : implement 409
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.EmpruntController.Get(System.Int32)">
+            <summary>
+            Récupère un Emprunt spécifique à l'aide de son identifiant unique.
+            </summary>
+            <param name="id">L'identifiant numérique du Emprunt à obtenir. </param>
+            <returns>L'objet Emprunt correspondant à l'ID. </returns>
+            <response code="200">Emprunt trouvé et retourné. </response>
+            <response code="404">Aucun auteur trouvé avec cet identifiant. </response>
+            <response code="500">Erreur interne du serveur. </response>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.EmpruntController.Post(ApiBiblio_Serveur.Models.Emprunt)">
+             <summary>
+             Crée un nouvel Emprunt dans la base de données.
+             api/v1/auteur/ + body
+             </summary>
+            <param name="e">L'objet Emprunt à insérer.</param>
+             <response code="201">Le Emprunt a été créé avec succès.</response>
+             <response code="400">Les données fournies sont invalides.</response>
+             <response code="500">Erreur interne du serveur. </response>///
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.EmpruntController.Delete(System.Int32)">
+            <summary>
+            Supprime un emprunt de l'inventaire en fournissant son identifiant unique.
+            api/v1/emprunt/{id}
+            </summary>
+            <param name="id">L'identifiant unique de l'emprunt à supprimer. </param>
+            <response code="204">Suppression reussie (aucun contenu retourne) .</response>
+            <response code="404">Aucun emprunt trouvé avec cet identifiant. </response>
+            <response code="409">L'emprunt est en cours d'utilisation ou entraîne un conflit de suppression. </response> //TODO : implement 409
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.LivreController.Get(System.Nullable{System.Boolean})">
+            <summary>
+            Récupère la liste complète des livres.
+            </summary>
+            <returns>Une liste de tous les objets Livre.</returns>
+            <response code="200">La liste a été récupérée avec succès. </response>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.LivreController.Get(System.Int32)">
+            <summary>
+            Récupère un Livre spécifique à l'aide de son identifiant unique.
+            </summary>
+            <param name="id">L'identifiant numérique du Livre à obtenir. </param>
+            <returns>L'objet Livre correspondant à l'ID. </returns>
+            <response code="200">Livre trouvé et retourné. </response>
+            <response code="404">Aucun livre trouvé avec cet identifiant. </response>
+            <response code="500">Erreur interne du serveur. </response>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.LivreController.GetByAuteur(System.Int32)">
+            <summary>
+            Récupère la liste des livres d'un auteur.
+            </summary>
+            <param name="auteurId">Identifiant de l'auteur.</param>
+            <returns>Liste des livres de cet auteur.</returns>
+            <response code="200">Livres retournés.</response>
+            <response code="404">Aucun livre trouvé.</response>
+            <response code="500">Erreur interne.</response>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.LivreController.GetByCategory(System.Int32)">
+            <summary>
+            Récupère la liste des livres appartenant à une catégorie.
+            </summary>
+            <param name="auteurId">Identifiant de la catégorie.</param>
+            <returns>Liste des livres de cet auteur.</returns>
+            <response code="200">Livres retournés.</response>
+            <response code="404">Aucun livre trouvé.</response>
+            <response code="500">Erreur interne.</response>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.LivreController.GetByMembre(System.Int32)">
+            <summary>
+            Récupère les livres empruntés par un membre.
+            </summary>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.LivreController.Post(ApiBiblio_Serveur.Models.Livre)">
+             <summary>
+             Crée un nouveau Livre dans la base de données.
+             </summary>
+            <param name="l">L'objet Livre à insérer.</param>
+             <response code="201">Le Livre a été créé avec succès.</response>
+             <response code="400">Les données fournies sont invalides.</response>
+             <response code="500">Erreur interne du serveur. </response>///
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.LivreController.Put(System.Int32,ApiBiblio_Serveur.Models.Livre)">
+            <summary>
+            Modifie un Livre existant dans la base de données en utilisant son identifiant unique.
+            </summary>
+            <param name="id">Livre à modifier</param>
+            <param name="l">Objet livre modifié</param>
+            <response code="200">Le Livre a été modifié avec succès.</response>
+            <response code="400">Les données fournies sont invalides.</response>
+            <response code="500">Erreur interne du serveur. </response>///
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.LivreController.Delete(System.Int32)">
+            <summary>
+            Supprime un livre de l'inventaire en fournissant son identifiant unique.
+            api/v1/livre/{id}
+            </summary>
+            <param name="id">L'identifiant unique du livre à supprimer. </param>
+            <response code="204">Suppression reussie (aucun contenu retourne) .</response>
+            <response code="404">Aucun livre trouve avec cet identifiant. </response>
+            <response code="409">Le livre est en cours d'utilisation ou entraîne un conflit de suppression. </response> //TODO : implement 409
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.MembreController.Get(System.Int32)">
+            <summary>
+            Récupère un Membre spécifique à l'aide de son identifiant unique.
+            </summary>
+            <param name="id">L'identifiant numérique du Memrbe à obtenir. </param>
+            <returns>L'objet Membre correspondant à l'ID. </returns>
+            <response code="200">Membre trouvé et retourné. </response>
+            <response code="404">Aucun membre trouvé avec cet identifiant. </response>
+            <response code="500">Erreur interne du serveur. </response>
+        </member>
+        <member name="M:ApiBiblio_Serveur.Controllers.MembreController.Post(ApiBiblio_Serveur.Models.Membre)">
+             <summary>
+             Crée un nouveau Membre dans la base de données.
+             api/v1/auteur/ + body
+             </summary>
+            <param name="m">L'objet Membre à insérer.</param>
+             <response code="201">Le Membre a été créé avec succès.</response>
+             <response code="400">Les données fournies sont invalides.</response>
+             <response code="500">Erreur interne du serveur. </response>///
+        </member>
+        <member name="M:ApiBiblio_Serveur.DataAccessLayer.Factories.QuotaApiFactory.SaveOrUpdateQuota(ApiBiblio_Serveur.Models.QuotaApi)">
+            <summary>
+            If Id of the new quota equals 0, it will insert a new quota for the member. Else, it will update the corresponding quota.
+            </summary>
+            <param name="newQuota"></param>
+        </member>
+    </members>
+</doc>

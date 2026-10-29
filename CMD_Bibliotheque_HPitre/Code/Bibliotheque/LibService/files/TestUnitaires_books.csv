@@ -1,0 +1,4 @@
+#WARNING : ANY MANUAL MODIFICATION MAY MAKE THE FILE UNREADABLE FOR THE PROGRAM.
+###books###
+guid,title,author,genre,pubDate,isbn,bookAddon,isavailable
+###/books###

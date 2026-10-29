@@ -1,0 +1,24 @@
+<!--https://share.google/aimode/VYPYlPcz8TJoFnn2W-->
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% translate "À propos" %}{% endblock %}
+{% block content %}
+    <h2>{% blocktranslate %}À propos de VinylVault 🚀{% endblocktranslate %}</h2>
+    <p>
+        {% blocktranslate %}<strong>VinylVault</strong>, c'est le fier fruit du <strong>cours 420-E60-CH PROGRAMMATION WEB ET SÉCURITÉ</strong>. C'est l'histoire d'un projet codé avec passion, trois tasses de café de trop, et une quantité industrielle de larmes versées devant une console de débogage à 2 h du matin. Derrière ce nom ultra-stylé qui évoque un coffre-fort hautement sécurisé pour audiophiles d'élite, se cache en réalité un exploit d'ingénierie logicielle (ou presque) destiné à valider notre session sans détruire notre santé mentale.{% endblocktranslate %}
+    </p>
+
+    <h3>{% blocktranslate %}Notre Stack Technique 🛠️{% endblocktranslate %}</h3>
+    <p>{% blocktranslate %}Pour faire cohabiter la pop de <em>BTS</em> et le mystérieux <em>Super Popo</em> d'Australie, il a fallu déployer l'artillerie lourde :{% endblocktranslate %}</p>
+    <ul>
+        <li>{% blocktranslate %}<strong>Requêtes SQL malades mentales :</strong> Des jointures si complexes entre les tables <code>Albums</code> et <code>Artistes</code> qu'elles font trembler l'intégrité référentielle de notre base de données.{% endblocktranslate %}</li>
+        <li>{% blocktranslate %}<strong>Algorithme de Notation Révolutionnaire :</strong> Un système ultra-sophistiqué où chaque membre peut coller son propre cinglant <code>2/5</code> à <em>Map Of The Soul</em> sans déclencher une cyberattaque des fans de K-Pop (ta note reste la tienne).{% endblocktranslate %}</li>
+        <li>{% blocktranslate %}<strong>Gestion des Coups de Cœur :</strong> Une variable booléenne, propre à chaque membre, qui active une petite étoile jaune <code>⭐</code>, développée après seulement 4 heures de combat acharné contre le CSS.{% endblocktranslate %}</li>
+        <li>{% blocktranslate %}<strong>Architecture Robuste :</strong> Un bouton <em>Modifier</em>, un autre pour <em>Supprimer</em> pis plein d'autres affaires !{% endblocktranslate %}</li>
+    </ul>
+
+    <h3>{% blocktranslate %}Notre Mission Universelle 🌍{% endblocktranslate %}</h3>
+    <p>
+        {% blocktranslate %}Remplacer tes étagères poussiéreuses par une interface web flambant neuve. Que tu veuilles ajouter le dernier <em>Bad Bunny</em>, vérifier si <em>Daft Punk</em> vient bien de France, ou simplement admirer notre design épuré, VinylVault est là. Bref, c'est l'outil parfait pour organiser ta collection simplement, prouver au prof que le code compile, et s'assurer que <em>Céline Dion</em> reste à jamais dans nos cœurs (et dans notre base de données).{% endblocktranslate %}
+    </p>
+{% endblock %}

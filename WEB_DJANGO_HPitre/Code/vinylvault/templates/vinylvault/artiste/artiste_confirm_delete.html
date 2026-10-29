@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% translate "Supprimer" %}{% endblock %}
+{% block content %}
+    <h1>{% translate "Confirmer la suppression" %}</h1>
+    <p>{% blocktranslate with nom=artiste.nom %}Es-tu sûr de vouloir supprimer l'artiste <strong>{{ nom }}</strong> ?{% endblocktranslate %}</p>
+    <p class="text-danger bg-warning p-2 rounded-pill">{% blocktranslate %}Attention : ceci supprimera aussi tous ses albums ("WOW ?! UNE RELATION CASCADE?!").{% endblocktranslate %}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% translate "Confirmer la suppression" %}</button>
+        <a href="{% url 'vinylvault:liste_artistes' %}" class="btn btn-secondary">{% translate "Annuler" %}</a>
+    </form>
+{% endblock %}

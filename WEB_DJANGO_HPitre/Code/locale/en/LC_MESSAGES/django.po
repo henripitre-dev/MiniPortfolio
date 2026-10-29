@@ -1,0 +1,616 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#
+#https://claude.ai/share/ea919f0b-5e59-47e6-8984-7288c61f2ed2
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-25 14:44-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\config\settings.py:117
+msgid "Français"
+msgstr "French"
+
+#: .\config\settings.py:118
+msgid "English"
+msgstr "English"
+
+#: .\member_app\apps.py:8
+msgid "Membres"
+msgstr "Members"
+
+#: .\member_app\templates\member_app\login.html:3
+msgid "Identification"
+msgstr "Log in"
+
+#: .\member_app\templates\member_app\login.html:10
+msgid "Veuillez vous identifier"
+msgstr "Please log in"
+
+#: .\member_app\templates\member_app\login.html:18
+#: .\member_app\templates\member_app\password_edit.html:18
+#: .\member_app\templates\member_app\user_create.html:18
+#: .\member_app\templates\member_app\user_edit.html:20
+#: .\vinylvault\templates\vinylvault\album\album_confirm_delete.html:16
+#: .\vinylvault\templates\vinylvault\album\album_form.html:11
+#: .\vinylvault\templates\vinylvault\artiste\artiste_confirm_delete.html:11
+#: .\vinylvault\templates\vinylvault\artiste\artiste_form.html:10
+#: .\vinylvault\templates\vinylvault\song_form.html:10
+msgid "Annuler"
+msgstr "Cancel"
+
+#: .\member_app\templates\member_app\login.html:19 .\templates\base.html:34
+msgid "Se connecter"
+msgstr "Log in"
+
+#: .\member_app\templates\member_app\password_edit.html:3
+#: .\member_app\templates\member_app\password_edit_success.html:3
+msgid "Mot de passe"
+msgstr "Password"
+
+#: .\member_app\templates\member_app\password_edit.html:10
+#: .\member_app\templates\member_app\user_edit.html:18
+msgid "Modifier votre mot de passe"
+msgstr "Change your password"
+
+#: .\member_app\templates\member_app\password_edit.html:19
+#: .\member_app\templates\member_app\user_edit.html:21
+#: .\vinylvault\templates\vinylvault\album\album_confirm_delete.html:15
+msgid "Confirmer"
+msgstr "Confirm"
+
+#: .\member_app\templates\member_app\password_edit_success.html:10
+msgid "Mot de passe modifié avec succès !"
+msgstr "Password changed successfully!"
+
+#: .\member_app\templates\member_app\password_edit_success.html:13
+msgid "Continuer"
+msgstr "Continue"
+
+#: .\member_app\templates\member_app\user_create.html:3
+msgid "Inscription"
+msgstr "Sign up"
+
+#: .\member_app\templates\member_app\user_create.html:10
+msgid "Inscrivez-vous dès maintenant"
+msgstr "Sign up now"
+
+#: .\member_app\templates\member_app\user_create.html:19
+msgid "S'inscrire"
+msgstr "Sign up"
+
+#: .\member_app\templates\member_app\user_edit.html:3
+msgid "Votre compte"
+msgstr "Your account"
+
+#: .\member_app\templates\member_app\user_edit.html:10
+msgid "Vos informations de compte"
+msgstr "Your account information"
+
+#: .\templates\base.html:24 .\vinylvault\templates\vinylvault\accueil.html:4
+msgid "Accueil"
+msgstr "Home"
+
+#: .\templates\base.html:25
+msgid "Albums"
+msgstr "Albums"
+
+#: .\templates\base.html:26
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:3
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:5
+msgid "Artistes"
+msgstr "Artists"
+
+#: .\templates\base.html:27 .\vinylvault\templates\vinylvault\a_propos.html:4
+msgid "À propos"
+msgstr "About"
+
+#: .\templates\base.html:31
+msgid "Se déconnecter"
+msgstr "Log out"
+
+#: .\templates\base.html:33
+msgid "Créer un compte"
+msgstr "Create an account"
+
+#: .\templates\base.html:58
+msgid "Fermer"
+msgstr "Close"
+
+#: .\vinylvault\admin.py:25 .\vinylvault\admin.py:76
+msgid "Aucun album associé"
+msgstr "No associated albums"
+
+#: .\vinylvault\admin.py:46 .\vinylvault\admin.py:97 .\vinylvault\views.py:131
+msgid "Ajouter un album"
+msgstr "Add an album"
+
+#: .\vinylvault\admin.py:51 .\vinylvault\admin.py:60 .\vinylvault\admin.py:102
+#: .\vinylvault\admin.py:111
+msgid "Albums associés"
+msgstr "Associated albums"
+
+#: .\vinylvault\admin.py:58 .\vinylvault\admin.py:109
+msgid "Voir les albums"
+msgstr "View albums"
+
+#: .\vinylvault\admin.py:142
+msgid "Titre"
+msgstr "Title"
+
+#: .\vinylvault\admin.py:149
+msgid "Prévisualisation"
+msgstr "Preview"
+
+#: .\vinylvault\forms.py:34
+msgid "L'année doit être entre 1900 et celle actuelle."
+msgstr "The year must be between 1900 and the current year."
+
+#: .\vinylvault\forms.py:52
+msgid "La note doit être entre 0 et 5."
+msgstr "The rating must be between 0 and 5."
+
+#: .\vinylvault\forms.py:61
+msgid "ex: 3:45"
+msgstr "e.g. 3:45"
+
+#: .\vinylvault\forms.py:77
+msgid "Le format doit être m:ss ou mm:ss (ex: 3:45, 12:07)."
+msgstr "The format must be m:ss or mm:ss (e.g. 3:45, 12:07)."
+
+#: .\vinylvault\forms.py:86
+#, python-format
+msgid "Le numéro doit être supérieur au dernier numéro existant (%(dernier)s)."
+msgstr ""
+"The number must be greater than the last existing track number (%(dernier)s)."
+
+#: .\vinylvault\models.py:6 .\vinylvault\models.py:18
+msgid "nom"
+msgstr "name"
+
+#: .\vinylvault\models.py:7
+msgid "pays"
+msgstr "country"
+
+#: .\vinylvault\models.py:10 .\vinylvault\models.py:30
+msgid "artiste"
+msgstr "artist"
+
+#: .\vinylvault\models.py:11
+msgid "artistes"
+msgstr "artists"
+
+#: .\vinylvault\models.py:21 .\vinylvault\models.py:31
+msgid "genre"
+msgstr "genre"
+
+#: .\vinylvault\models.py:22
+msgid "genres"
+msgstr "genres"
+
+#: .\vinylvault\models.py:29 .\vinylvault\models.py:77
+msgid "titre"
+msgstr "title"
+
+#: .\vinylvault\models.py:32
+msgid "année de sortie"
+msgstr "release year"
+
+#: .\vinylvault\models.py:34
+msgid "image"
+msgstr "image"
+
+#: .\vinylvault\models.py:36
+msgid "URL de la pochette"
+msgstr "Cover's URL"
+
+#: .\vinylvault\models.py:39 .\vinylvault\models.py:61
+#: .\vinylvault\models.py:76
+msgid "album"
+msgstr "album"
+
+#: .\vinylvault\models.py:40
+msgid "albums"
+msgstr "albums"
+
+#: .\vinylvault\models.py:56
+msgid "Possédé"
+msgstr "Owned"
+
+#: .\vinylvault\models.py:57
+msgid "Sur ma liste de souhaits"
+msgstr "On my wishlist"
+
+#: .\vinylvault\models.py:60
+msgid "utilisateur"
+msgstr "user"
+
+#: .\vinylvault\models.py:62
+msgid "statut"
+msgstr "status"
+
+#: .\vinylvault\models.py:63
+msgid "note"
+msgstr "rating"
+
+#: .\vinylvault\models.py:64
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:41
+msgid "Coup de coeur"
+msgstr "Favourite"
+
+#: .\vinylvault\models.py:68
+msgid "album d'un utilisateur"
+msgstr "user album"
+
+#: .\vinylvault\models.py:69
+msgid "albums des utilisateurs"
+msgstr "user albums"
+
+#: .\vinylvault\models.py:78
+msgid "durée"
+msgstr "duration"
+
+#: .\vinylvault\models.py:79
+msgid "Numéro"
+msgstr "Track number"
+
+#: .\vinylvault\models.py:83
+msgid "chanson"
+msgstr "song"
+
+#: .\vinylvault\models.py:84
+msgid "chansons"
+msgstr "songs"
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:6
+msgid "À propos de VinylVault 🚀"
+msgstr "About VinylVault 🚀"
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:8
+msgid ""
+"<strong>VinylVault</strong>, c'est le fier fruit du <strong>cours 420-E60-CH "
+"PROGRAMMATION WEB ET SÉCURITÉ</strong>. C'est l'histoire d'un projet codé "
+"avec passion, trois tasses de café de trop, et une quantité industrielle de "
+"larmes versées devant une console de débogage à 2 h du matin. Derrière ce "
+"nom ultra-stylé qui évoque un coffre-fort hautement sécurisé pour "
+"audiophiles d'élite, se cache en réalité un exploit d'ingénierie logicielle "
+"(ou presque) destiné à valider notre session sans détruire notre santé "
+"mentale."
+msgstr ""
+"<strong>VinylVault</strong> is the proud fruit of the <strong>420-E60-CH WEB "
+"PROGRAMMING AND SECURITY course</strong>. It's the story of a project coded "
+"with passion, three cups of coffee too many, and an industrial amount of "
+"tears shed in front of a debugging console at 2 a.m. Behind this ultra-"
+"stylish name, which evokes a high-security vault for elite audiophiles, "
+"actually hides a feat of software engineering (or almost) meant to get us "
+"through the semester without destroying our mental health."
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:11
+msgid "Notre Stack Technique 🛠️"
+msgstr "Our Tech Stack 🛠️"
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:12
+msgid ""
+"Pour faire cohabiter la pop de <em>BTS</em> et le mystérieux <em>Super Popo</"
+"em> d'Australie, il a fallu déployer l'artillerie lourde :"
+msgstr ""
+"To make the pop of <em>BTS</em> and the mysterious <em>Super Popo</em> from "
+"Australia live side by side, we had to bring out the heavy artillery:"
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:14
+msgid ""
+"<strong>Requêtes SQL malades mentales :</strong> Des jointures si complexes "
+"entre les tables <code>Albums</code> et <code>Artistes</code> qu'elles font "
+"trembler l'intégrité référentielle de notre base de données."
+msgstr ""
+"<strong>Absolutely unhinged SQL queries:</strong> Joins between the "
+"<code>Albums</code> and <code>Artistes</code> tables so complex they make "
+"our database's referential integrity tremble."
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:15
+msgid ""
+"<strong>Algorithme de Notation Révolutionnaire :</strong> Un système ultra-"
+"sophistiqué où chaque membre peut coller son propre cinglant <code>2/5</"
+"code> à <em>Map Of The Soul</em> sans déclencher une cyberattaque des fans "
+"de K-Pop (ta note reste la tienne)."
+msgstr ""
+"<strong>Revolutionary Rating Algorithm:</strong> An ultra-sophisticated "
+"system where every member can slap their own scathing <code>2/5</code> on "
+"<em>Map Of The Soul</em> without triggering a cyberattack from K-Pop fans "
+"(your rating stays yours)."
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:16
+msgid ""
+"<strong>Gestion des Coups de Cœur :</strong> Une variable booléenne, propre "
+"à chaque membre, qui active une petite étoile jaune <code>⭐</code>, "
+"développée après seulement 4 heures de combat acharné contre le CSS."
+msgstr ""
+"<strong>Favourites Management:</strong> A boolean variable, unique to each "
+"member, that lights up a little yellow star <code>⭐</code>, developed after "
+"only 4 hours of fierce combat against CSS."
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:17
+msgid ""
+"<strong>Architecture Robuste :</strong> Un bouton <em>Modifier</em>, un "
+"autre pour <em>Supprimer</em> pis plein d'autres affaires !"
+msgstr ""
+"<strong>Robust Architecture:</strong> An <em>Edit</em> button, another one "
+"to <em>Delete</em>, and a whole bunch of other stuff!"
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:20
+msgid "Notre Mission Universelle 🌍"
+msgstr "Our Universal Mission 🌍"
+
+#: .\vinylvault\templates\vinylvault\a_propos.html:22
+msgid ""
+"Remplacer tes étagères poussiéreuses par une interface web flambant neuve. "
+"Que tu veuilles ajouter le dernier <em>Bad Bunny</em>, vérifier si <em>Daft "
+"Punk</em> vient bien de France, ou simplement admirer notre design épuré, "
+"VinylVault est là. Bref, c'est l'outil parfait pour organiser ta collection "
+"simplement, prouver au prof que le code compile, et s'assurer que <em>Céline "
+"Dion</em> reste à jamais dans nos cœurs (et dans notre base de données)."
+msgstr ""
+"Replace your dusty shelves with a brand-new web interface. Whether you want "
+"to add the latest <em>Bad Bunny</em>, check whether <em>Daft Punk</em> "
+"really comes from France, or just admire our clean design, VinylVault is "
+"here. In short, it's the perfect tool to organize your collection simply, "
+"prove to the teacher that the code compiles, and make sure <em>Céline Dion</"
+"em> stays in our hearts forever (and in our database)."
+
+#: .\vinylvault\templates\vinylvault\accueil.html:7
+msgid "Bienvenue sur VinylVault"
+msgstr "Welcome to VinylVault"
+
+#: .\vinylvault\templates\vinylvault\accueil.html:8
+msgid ""
+"Une collection d'albums partagé, triée selon tes goûts et uniformisée pour "
+"ton plus grand plaisir."
+msgstr ""
+"A shared album collection, sorted to your taste and standardized for your "
+"greatest pleasure."
+
+#: .\vinylvault\templates\vinylvault\accueil.html:9
+msgid "Explorer le catalogue"
+msgstr "Explore the catalogue"
+
+#: .\vinylvault\templates\vinylvault\album\album_confirm_delete.html:3
+#: .\vinylvault\templates\vinylvault\album\liste_albums.html:33
+#: .\vinylvault\templates\vinylvault\artiste\artiste_confirm_delete.html:3
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:21
+msgid "Supprimer"
+msgstr "Delete"
+
+#: .\vinylvault\templates\vinylvault\album\album_confirm_delete.html:5
+#: .\vinylvault\templates\vinylvault\artiste\artiste_confirm_delete.html:5
+#: .\vinylvault\templates\vinylvault\artiste\artiste_confirm_delete.html:10
+msgid "Confirmer la suppression"
+msgstr "Confirm deletion"
+
+#: .\vinylvault\templates\vinylvault\album\album_confirm_delete.html:6
+#, python-format
+msgid "Es-tu sûr de vouloir supprimer l'album <strong>%(titre)s</strong> ?"
+msgstr "Are you sure you want to delete the album <strong>%(titre)s</strong>?"
+
+#: .\vinylvault\templates\vinylvault\album\album_form.html:10
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:45
+#: .\vinylvault\templates\vinylvault\artiste\artiste_form.html:9
+#: .\vinylvault\templates\vinylvault\song_form.html:9
+msgid "Enregistrer"
+msgstr "Save"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:5
+msgid "Ton coup de coeur!"
+msgstr "Your favourite!"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:15
+msgid "Artiste :"
+msgstr "Artist:"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:16
+msgid "Genre :"
+msgstr "Genre:"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:16
+msgid "Non spécifié"
+msgstr "Not specified"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:17
+msgid "Année :"
+msgstr "Year:"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:21
+msgid "Ma collection"
+msgstr "My collection"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:24
+msgid "Cet album n'est pas encore dans ta collection."
+msgstr "This album is not in your collection yet."
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:29
+msgid "Statut"
+msgstr "Status"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:34
+msgid "Ma note /5"
+msgstr "My rating /5"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:51
+#, python-format
+msgid ""
+"<a href=\"%(login_url)s?next=%(next)s\" class=\"link-light\">Connecte-toi</"
+"a> pour ajouter cet album à ta collection, le noter ou en faire un coup de "
+"coeur."
+msgstr ""
+"<a href=\"%(login_url)s?next=%(next)s\" class=\"link-light\">Log in</a> to "
+"add this album to your collection, rate it or make it a favourite."
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:55
+msgid "Chansons"
+msgstr "Songs"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:56
+msgid "+ Ajouter une chanson"
+msgstr "+ Add a song"
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:64
+msgid "Aucune chanson ajoutée pour cet album."
+msgstr "No songs added for this album yet."
+
+#: .\vinylvault\templates\vinylvault\album\detail_album.html:67
+msgid "Retour à la liste"
+msgstr "Back to the list"
+
+#: .\vinylvault\templates\vinylvault\album\liste_albums.html:3
+#: .\vinylvault\templates\vinylvault\album\liste_albums.html:5
+msgid "Catalogue d'albums"
+msgstr "Album catalogue"
+
+#: .\vinylvault\templates\vinylvault\album\liste_albums.html:7
+msgid "+ Ajouter un album"
+msgstr "+ Add an album"
+
+#: .\vinylvault\templates\vinylvault\album\liste_albums.html:26
+msgid "Voir les détails"
+msgstr "View details"
+
+#: .\vinylvault\templates\vinylvault\album\liste_albums.html:31
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:20
+msgid "Modifier"
+msgstr "Edit"
+
+#: .\vinylvault\templates\vinylvault\album\liste_albums.html:41
+msgid "Aucun album pour l'instant."
+msgstr "No albums yet."
+
+#: .\vinylvault\templates\vinylvault\artiste\artiste_confirm_delete.html:6
+#, python-format
+msgid "Es-tu sûr de vouloir supprimer l'artiste <strong>%(nom)s</strong> ?"
+msgstr "Are you sure you want to delete the artist <strong>%(nom)s</strong>?"
+
+#: .\vinylvault\templates\vinylvault\artiste\artiste_confirm_delete.html:7
+msgid ""
+"Attention : ceci supprimera aussi tous ses albums (\"WOW ?! UNE RELATION "
+"CASCADE?!\")."
+msgstr ""
+"Warning: this will also delete all of their albums (\"WOW?! A CASCADE "
+"RELATIONSHIP?!\")."
+
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:6
+msgid "+ Ajouter un artiste"
+msgstr "+ Add an artist"
+
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:12
+msgid "Nom"
+msgstr "Name"
+
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:12
+msgid "Pays"
+msgstr "Country"
+
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:12
+msgid "Actions"
+msgstr "Actions"
+
+#: .\vinylvault\templates\vinylvault\artiste\liste_artistes.html:29
+msgid "Aucun artiste enregistré."
+msgstr "No artists saved yet."
+
+#: .\vinylvault\templates\vinylvault\includes\pagination_section.html:8
+#: .\vinylvault\templates\vinylvault\includes\pagination_section.html:10
+msgid "Précédent"
+msgstr "Previous"
+
+#: .\vinylvault\templates\vinylvault\includes\pagination_section.html:20
+#: .\vinylvault\templates\vinylvault\includes\pagination_section.html:22
+msgid "Suivant"
+msgstr "Next"
+
+#: .\vinylvault\templates\vinylvault\includes\pagination_section.html:29
+#, python-format
+msgid "%(counter)s item trouvé"
+msgid_plural "%(counter)s items trouvés"
+msgstr[0] "%(counter)s item found"
+msgstr[1] "%(counter)s items found"
+
+#: .\vinylvault\templates\vinylvault\song_form.html:3
+msgid "Ajouter une chanson"
+msgstr "Add a song"
+
+#: .\vinylvault\templates\vinylvault\song_form.html:5
+#, python-format
+msgid "Ajouter une chanson | %(titre)s"
+msgstr "Add a song | %(titre)s"
+
+#: .\vinylvault\views.py:66
+msgid "Ta collection a été mise à jour."
+msgstr "Your collection has been updated."
+
+#: .\vinylvault\views.py:69 .\vinylvault\views.py:86 .\vinylvault\views.py:100
+#: .\vinylvault\views.py:128 .\vinylvault\views.py:143
+#: .\vinylvault\views.py:172
+msgid "Le formulaire contient des erreurs, vérifiez les champs."
+msgstr "The form contains errors, please check the fields."
+
+#: .\vinylvault\views.py:83
+msgid "L'artiste a été ajouté avec succès."
+msgstr "The artist was added successfully."
+
+#: .\vinylvault\views.py:89
+msgid "Ajouter un artiste"
+msgstr "Add an artist"
+
+#: .\vinylvault\views.py:96 .\vinylvault\views.py:101
+msgid "Modifier l'artiste"
+msgstr "Edit artist"
+
+#: .\vinylvault\views.py:104
+msgid "L'artiste a été modifié avec succès."
+msgstr "The artist was updated successfully."
+
+#: .\vinylvault\views.py:113
+#, python-format
+msgid "L'artiste « %(nom)s » a été supprimé."
+msgstr "The artist “%(nom)s” was deleted."
+
+#: .\vinylvault\views.py:125
+msgid "L'album a été ajouté avec succès."
+msgstr "The album was added successfully."
+
+#: .\vinylvault\views.py:140
+msgid "L'album a été modifié avec succès."
+msgstr "The album was updated successfully."
+
+#: .\vinylvault\views.py:146
+msgid "Modifier l'album"
+msgstr "Edit album"
+
+#: .\vinylvault\views.py:154
+#, python-format
+msgid "L'album « %(titre)s » a été supprimé."
+msgstr "The album “%(titre)s” was deleted."
+
+#: .\vinylvault\views.py:169
+msgid "La chanson a été ajoutée avec succès."
+msgstr "The song was added successfully."
+
+#: .\vinylvault\views.py:181
+msgid "Ton compte n'a pas la permission de faire cette action."
+msgstr "Your account doesn't have permission to do this."
+
+#: .\vinylvault\views.py:183
+msgid "Tu dois être connecté pour faire cette action."
+msgstr "You must be logged in to do this."

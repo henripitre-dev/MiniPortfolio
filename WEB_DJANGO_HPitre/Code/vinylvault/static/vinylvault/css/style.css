@@ -1,0 +1,31 @@
+#mainpage {
+  background-image: url("../images/bg.jpg");
+}
+
+.card,
+.tableholder {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  background: white;
+}
+
+td,
+th {
+  background-color: transparent !important;
+}
+
+select,
+input:not(input[type="checkbox"]) {
+  color: white !important;
+  font-weight: 600 !important;
+  background: radial-gradient(lightgray, gray) !important;
+  /*Pas super mais form-select écrase le bg et moins long de prioriser plutôt que de recréer la classe (padding, arrondi, etc.) */
+}
+
+.album-cover {
+  height: 200px;
+  object-fit: cover;
+}
+
+.album-cover-detail {
+  max-height: 250px;
+}

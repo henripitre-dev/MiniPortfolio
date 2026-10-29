@@ -1,0 +1,245 @@
+﻿<Window
+    x:Class="GoGame.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:GoGame.ViewModels"
+    Title="Unleashed Go"
+    Width="1280"
+    Height="820"
+    MinWidth="1000"
+    MinHeight="700"
+    d:DataContext="{d:DesignInstance Type=vm:MainVM}"
+    Background="{StaticResource AppBackground}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <Grid>
+
+        <!--  BACKGROUND DECORATION  -->
+        <Ellipse
+            Width="500"
+            Height="500"
+            Margin="-220,-220,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Fill="#25A47551" />
+
+        <Ellipse
+            Width="420"
+            Height="420"
+            Margin="0,120,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Fill="#18A47551" />
+
+        <Ellipse
+            Width="360"
+            Height="360"
+            Margin="0,0,-160,-160"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Fill="#30A47551" />
+
+        <!--  MAIN CONTENT  -->
+        <Grid>
+
+            <!--  HOME SCREEN  -->
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!--  CENTER CONTENT  -->
+                <Grid
+                    Width="900"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.2*" />
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="0.8*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!--  LEFT SIDE  -->
+                    <StackPanel VerticalAlignment="Center">
+
+                        <Border
+                            Width="120"
+                            Height="120"
+                            Margin="0,0,0,24"
+                            Background="{StaticResource WoodDarkBrush}"
+                            CornerRadius="60">
+
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="48"
+                                Foreground="White"
+                                Text="碁" />
+                        </Border>
+
+                        <TextBlock
+                            FontSize="52"
+                            Style="{StaticResource TitleText}"
+                            Text="UNLEASHED GO" />
+
+                        <TextBlock
+                            Margin="0,10,0,0"
+                            FontSize="18"
+                            Foreground="{StaticResource TextSecondaryBrush}"
+                            Text="Une expérience moderne du jeu de Go."
+                            TextWrapping="Wrap" />
+
+                        <TextBlock
+                            Width="520"
+                            Margin="0,22,0,0"
+                            FontSize="14"
+                            Foreground="{StaticResource TextSecondaryBrush}"
+                            LineHeight="24"
+                            Text="Affrontez vos amis sur des plateaux 9×9, 13×13 ou 19×19. Analysez vos parties, testez des situations tactiques et profitez d’une interface élégante inspirée du bois traditionnel japonais."
+                            TextWrapping="Wrap" />
+
+                        <!--  ACTIONS  -->
+                        <StackPanel
+                            Margin="0,32,0,0"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+
+                            <Button
+                                Width="200"
+                                Height="54"
+                                Margin="0,0,16,0"
+                                Command="{Binding GoToCreateGameCommand}"
+                                Content="🎮 Nouvelle partie"
+                                Style="{StaticResource SecondaryButton}" />
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--  RIGHT CARD  -->
+                    <Border
+                        Grid.Column="2"
+                        Padding="28"
+                        VerticalAlignment="Center"
+                        Background="White"
+                        Style="{StaticResource CardStyle}">
+
+                        <StackPanel>
+
+                            <TextBlock
+                                FontSize="24"
+                                FontWeight="Bold"
+                                Text="Informations" />
+
+                            <Border
+                                Margin="0,18,0,0"
+                                Padding="14"
+                                Background="#12A47551"
+                                CornerRadius="12">
+
+                                <StackPanel>
+
+                                    <TextBlock FontWeight="SemiBold" Text="🎯 Règles utilisées" />
+
+                                    <TextBlock
+                                        Margin="0,6,0,0"
+                                        FontSize="12"
+                                        Foreground="{StaticResource TextSecondaryBrush}"
+                                        Text="Cette version utilise actuellement la règle du simple ko."
+                                        TextWrapping="Wrap" />
+
+                                </StackPanel>
+
+                            </Border>
+
+                            <Border
+                                Margin="0,14,0,0"
+                                Padding="14"
+                                Background="{StaticResource WoodLightBrush}"
+                                CornerRadius="12">
+
+                                <StackPanel>
+
+                                    <TextBlock FontWeight="SemiBold" Text="🧪 Fonctionnalités" />
+
+                                    <TextBlock
+                                        Margin="0,8,0,0"
+                                        FontSize="12"
+                                        Foreground="{StaticResource TextSecondaryBrush}"
+                                        LineHeight="20"
+                                        Text="• Plateaux dynamiques&#10;• Presets de debug&#10;• Gestion des captures&#10;• Chronomètre des joueurs&#10;• Interface moderne WPF"
+                                        TextWrapping="Wrap" />
+
+                                </StackPanel>
+
+                            </Border>
+
+                            <Border
+                                Margin="0,14,0,0"
+                                Padding="14"
+                                Background="#FFF7F1"
+                                BorderBrush="#F0D8BE"
+                                BorderThickness="1"
+                                CornerRadius="12">
+
+                                <StackPanel>
+
+                                    <TextBlock FontWeight="SemiBold" Text="💡 Citation" />
+
+                                    <TextBlock
+                                        Margin="0,8,0,0"
+                                        FontStyle="Italic"
+                                        Foreground="{StaticResource TextSecondaryBrush}"
+                                        Text="“Le Go est si élégant, organique et rigoureusement logique.”"
+                                        TextWrapping="Wrap" />
+
+                                </StackPanel>
+
+                            </Border>
+
+                        </StackPanel>
+
+                    </Border>
+
+                </Grid>
+
+                <!--  FOOTER  -->
+                <Border
+                    Grid.Row="1"
+                    Height="38"
+                    Background="#F4E9D4"
+                    BorderBrush="{StaticResource BorderSoftBrush}"
+                    BorderThickness="1,1,1,0">
+
+                    <Grid Margin="18,0">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            VerticalAlignment="Center"
+                            FontSize="12"
+                            Foreground="{StaticResource TextSecondaryBrush}"
+                            Text="Unleashed Go • Henri Pitre" />
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+            <!--  NAVIGATED CONTENT  -->
+            <ContentControl Content="{Binding CurrentView}" />
+
+        </Grid>
+
+    </Grid>
+
+</Window>

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% translate "Ajouter une chanson" %}{% endblock %}
+{% block content %}
+    <h1>{% blocktranslate with titre=album.titre %}Ajouter une chanson | {{ titre }}{% endblocktranslate %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% translate "Enregistrer" %}</button>
+        <a href="{% url 'vinylvault:detail_album' pk=album.pk %}" class="btn btn-secondary">{% translate "Annuler" %}</a>
+    </form>
+{% endblock %}

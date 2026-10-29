@@ -1,0 +1,46 @@
+# Requêtes de test : lancer l'API (profil http ou https), puis cliquer sur « Send request » au-dessus de chaque requête.
+@host = http://localhost:5264
+@cleAdmin = admin_apikey
+@cleUser = user_apikey
+
+### Connexion : retourne la clé d'API du compte
+GET {{host}}/Login/admin/admin
+
+### Connexion refusée (401)
+GET {{host}}/Login/admin/mauvais
+
+### Liste des livres (public)
+GET {{host}}/api/v1/Livre
+Accept: application/json
+
+### Livres disponibles seulement (public)
+GET {{host}}/api/v1/Livre?disponible=true
+
+### Un livre (public)
+GET {{host}}/api/v1/Livre/1
+
+### Livres d'un auteur (public)
+GET {{host}}/api/v1/Livre/auteur/3
+
+### Ajouter un livre sans clé (401)
+POST {{host}}/api/v1/Livre
+Content-Type: application/json
+
+{ "isbn": "9782764626566", "titre": "Le Vide", "nbPages": 658, "auteurId": 3, "categorieId": 4 }
+
+### Ajouter un livre avec une clé « user » (403 : rôle insuffisant)
+POST {{host}}/api/v1/Livre
+Content-Type: application/json
+x-api-key: {{cleUser}}
+
+{ "isbn": "9782764626566", "titre": "Le Vide", "nbPages": 658, "auteurId": 3, "categorieId": 4 }
+
+### Ajouter un livre avec la clé admin (201)
+POST {{host}}/api/v1/Livre
+Content-Type: application/json
+x-api-key: {{cleAdmin}}
+
+{ "isbn": "9782764626566", "titre": "Le Vide", "nbPages": 658, "auteurId": 3, "categorieId": 4 }
+
+### Liste des auteurs (public)
+GET {{host}}/api/v1/Auteur

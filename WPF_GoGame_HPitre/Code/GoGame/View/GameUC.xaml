@@ -1,0 +1,493 @@
+﻿<UserControl
+    x:Class="GoGame.View.GameUC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:modelEnums="clr-namespace:GoGame.Model.Enums"
+    xmlns:viewmodels="clr-namespace:GoGame.ViewModels"
+    d:DataContext="{d:DesignInstance Type=viewmodels:GameVM}"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource AppBackground}">
+
+        <!--  LAYOUT  -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="36" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <!--  LEFT ACTIONS  -->
+        <Border
+            Grid.Column="0"
+            Height="220"
+            Margin="18,0,0,0"
+            Padding="10"
+            Style="{StaticResource CardStyle}">
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <Button
+                    Margin="0,0,0,8"
+                    Command="{Binding PlayerPassCommand}"
+                    Content="Passer ⏩"
+                    Style="{StaticResource SecondaryButton}"
+                    ToolTip="Passer le tour" />
+
+                <Button
+                    Margin="0,0,0,8"
+                    Command="{Binding AbandonGameCommand}"
+                    Content="Abandonner 🏴"
+                    Style="{StaticResource SecondaryButton}"
+                    ToolTip="Abandonner la partie" />
+
+                <Button
+                    Margin="0,0,0,8"
+                    Command="{Binding RestartGameCommand}"
+                    Content="Recommencer 🔁"
+                    Style="{StaticResource SecondaryButton}"
+                    ToolTip="Recommencer la partie" />
+                <Button
+                    Command="{Binding QuitGameCommand}"
+                    Content="Quitter ↩️"
+                    Style="{StaticResource PrimaryButton}"
+                    ToolTip="Retourner au menu principal" />
+
+            </StackPanel>
+
+        </Border>
+
+        <Border
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Margin="12"
+            Padding="5"
+            Style="{StaticResource CardStyle}">
+
+            <StackPanel>
+
+                <!--  TOGGLE BUTTON  -->
+                <Button
+                    Width="180"
+                    HorizontalAlignment="Center"
+                    Command="{Binding ToggleDebugPresetsCommand}"
+                    Content="🧪 Debug Presets"
+                    Style="{StaticResource SecondaryButton}" />
+
+                <!--  PRESETS  -->
+                <StackPanel Margin="0,12,0,0" Visibility="{Binding ShowDebugPresets, Converter={StaticResource BoolToVisibility}}">
+
+                    <!--  ROW 1  -->
+                    <WrapPanel HorizontalAlignment="Center">
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.HandicapOpening}"
+                            Content="Handicap" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.SimpleCapture}"
+                            Content="Simple Capture" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.MultiCapture}"
+                            Content="Multi Capture" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.KoFight}"
+                            Content="Ko Fight" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.SuicideMove}"
+                            Content="Suicide" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.TerritoryTest}"
+                            Content="Territory" />
+
+                    </WrapPanel>
+
+                    <!--  ROW 2  -->
+                    <WrapPanel HorizontalAlignment="Center">
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.Snapback}"
+                            Content="Snapback" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.LateGame}"
+                            Content="Late Game" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.FullBoardStress}"
+                            Content="Stress Test" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.EdgeCapture}"
+                            Content="Edge Capture" />
+
+                        <Button
+                            Margin="6"
+                            Command="{Binding LoadPresetCommand}"
+                            CommandParameter="{x:Static modelEnums:DebugPreset.CornerCapture}"
+                            Content="Corner Capture" />
+
+                    </WrapPanel>
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </Border>
+        <!--  CENTER BOARD  -->
+        <Grid
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+
+            <Border
+                Padding="12"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Style="{StaticResource CardStyle}">
+
+                <!--  FIXED BOARD SIZE  -->
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Width="500" Height="500">
+
+                        <!--  BOARD BACKGROUND  -->
+                        <Border
+                            Background="{StaticResource WoodMediumBrush}"
+                            BorderBrush="{StaticResource WoodDarkBrush}"
+                            BorderThickness="2"
+                            CornerRadius="10" />
+
+                        <!--  CELLS  -->
+                        <ItemsControl ItemsSource="{Binding Cells}">
+
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <!--  TODO: DYNAMISER  -->
+                                    <UniformGrid Columns="9" Rows="9" />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+
+                                    <Button
+                                        Margin="0"
+                                        Padding="0"
+                                        HorizontalContentAlignment="Stretch"
+                                        VerticalContentAlignment="Stretch"
+                                        Background="Transparent"
+                                        BorderThickness="0"
+                                        Command="{Binding DataContext.ClickCellCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                        CommandParameter="{Binding}"
+                                        ToolTip="{Binding Coords}">
+
+                                        <Grid>
+
+                                            <!--  GRID LINES  -->
+                                            <Grid>
+
+                                                <!--  Horizontal  -->
+                                                <Border
+                                                    Height="2"
+                                                    VerticalAlignment="Center"
+                                                    Background="Black"
+                                                    Opacity="0.4" />
+
+                                                <!--  Vertical  -->
+                                                <Border
+                                                    Width="2"
+                                                    HorizontalAlignment="Center"
+                                                    Background="Black"
+                                                    Opacity="0.4" />
+                                            </Grid>
+
+                                            <!--  STAR POINTS  -->
+                                            <Polygon
+                                                Width="24"
+                                                Height="24"
+                                                Margin="12,12,0,0"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Fill="Black"
+                                                Opacity=".6"
+                                                Points="6,0 8,4 12,6 8,8 6,12 4,8 0,6 4,4">
+
+                                                <Polygon.Style>
+                                                    <Style TargetType="Polygon">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding IsStarPoint}" Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Polygon.Style>
+
+                                            </Polygon>
+
+                                            <!--  STONES  -->
+                                            <Ellipse
+                                                Width="40"
+                                                Height="40"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                StrokeThickness=".8">
+
+                                                <Ellipse.Style>
+                                                    <Style TargetType="Ellipse">
+                                                        <Setter Property="Fill" Value="Transparent" />
+
+                                                        <Style.Triggers>
+
+                                                            <!--  Black stone  -->
+                                                            <DataTrigger Binding="{Binding Stone.Color}" Value="Black">
+                                                                <Setter Property="Fill" Value="{StaticResource BlackStone}" />
+                                                                <Setter Property="Stroke" Value="{StaticResource BlackStoneBrdr}" />
+                                                            </DataTrigger>
+
+                                                            <!--  White stone  -->
+                                                            <DataTrigger Binding="{Binding Stone.Color}" Value="White">
+                                                                <Setter Property="Fill" Value="{StaticResource WhiteStone}" />
+                                                                <Setter Property="Stroke" Value="{StaticResource WhiteStoneBrdr}" />
+                                                            </DataTrigger>
+
+                                                            <!--  No Stone  -->
+                                                            <DataTrigger Binding="{Binding Stone}" Value="{x:Null}">
+                                                                <Setter Property="Fill" Value="Transparent" />
+                                                            </DataTrigger>
+
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Ellipse.Style>
+
+                                            </Ellipse>
+
+                                        </Grid>
+                                    </Button>
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+
+                    </Grid>
+                </ScrollViewer>
+
+            </Border>
+
+        </Grid>
+
+        <!--  RIGHT PANEL  -->
+        <ScrollViewer
+            Grid.Column="2"
+            VerticalAlignment="Center"
+            VerticalScrollBarVisibility="Auto">
+
+            <StackPanel Margin="18">
+
+                <!--  CURRENT TURN  -->
+                <Border
+                    Margin="0,0,0,12"
+                    Padding="16"
+                    Background="{StaticResource WoodMediumBrush}"
+                    CornerRadius="14">
+
+                    <StackPanel>
+
+                        <TextBlock Style="{StaticResource LabelStyle}" Text="Tour actuel" />
+
+                        <StackPanel Margin="0,6,0,0" Orientation="Horizontal">
+
+                            <Ellipse
+                                Width="14"
+                                Height="14"
+                                VerticalAlignment="Center"
+                                Fill="{Binding CurrentPlayer.Color, Converter={StaticResource StoneColorToXaml}}" />
+                            <TextBlock
+                                Margin="8,0,0,0"
+                                FontSize="18"
+                                FontWeight="Bold"
+                                Text="{Binding CurrentPlayer.Name}" />
+                        </StackPanel>
+
+                        <TextBlock
+                            Margin="0,4,0,0"
+                            FontSize="11"
+                            Foreground="{StaticResource TextSecondaryBrush}"
+                            Text="{Binding CurrentPlayer.ThinkingTime, Converter={StaticResource SecondsToTextTime}, StringFormat='Réfléchit depuis {0} ...'}" />
+                    </StackPanel>
+                </Border>
+
+                <!--  TIME  -->
+                <Border
+                    Margin="0,0,0,12"
+                    Padding="16"
+                    Style="{StaticResource CardStyle}">
+                    <StackPanel>
+
+                        <TextBlock Style="{StaticResource LabelStyle}" Text="⏱ Temps" />
+
+                        <Grid Margin="0,8,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0">
+                                <StackPanel Orientation="Horizontal">
+                                    <Ellipse
+                                        Width="14"
+                                        Height="14"
+                                        VerticalAlignment="Center"
+                                        Fill="{Binding BlackPlayer.Color, Converter={StaticResource StoneColorToXaml}}" />
+                                    <TextBlock FontWeight="SemiBold" Text="{Binding BlackPlayer.Name}" />
+                                </StackPanel>
+
+                                <TextBlock FontSize="13" Text="{Binding BlackPlayer.TimePlayed, Converter={StaticResource SecondsToTextTime}}" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1">
+                                <StackPanel Orientation="Horizontal">
+                                    <Ellipse
+                                        Width="14"
+                                        Height="14"
+                                        VerticalAlignment="Center"
+                                        Fill="{Binding WhitePlayer.Color, Converter={StaticResource StoneColorToXaml}}" />
+                                    <TextBlock FontWeight="SemiBold" Text="{Binding WhitePlayer.Name}" />
+                                </StackPanel>
+
+                                <TextBlock FontSize="13" Text="{Binding WhitePlayer.TimePlayed, Converter={StaticResource SecondsToTextTime}}" />
+                            </StackPanel>
+                        </Grid>
+
+                    </StackPanel>
+                </Border>
+
+                <!--  CAPTURES  -->
+                <Border
+                    Margin="0,0,0,12"
+                    Padding="16"
+                    Style="{StaticResource CardStyle}">
+                    <StackPanel>
+
+                        <TextBlock Style="{StaticResource LabelStyle}" Text="🎯 Captures" />
+
+                        <Grid Margin="0,8,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="{Binding BlackPlayer.NbCaptures, StringFormat='Noir : {0}'}" />
+                            <TextBlock Grid.Column="1" Text="{Binding WhitePlayer.NbCaptures, StringFormat='Blanc : {0}'}" />
+                        </Grid>
+
+                    </StackPanel>
+                </Border>
+
+                <!--  LAST MOVE  -->
+                <Border
+                    Margin="0,0,0,12"
+                    Padding="16"
+                    Background="#10A47551"
+                    CornerRadius="12">
+
+                    <StackPanel>
+
+                        <TextBlock Style="{StaticResource LabelStyle}" Text="Dernier coup" />
+
+                        <TextBlock
+                            Margin="0,6,0,0"
+                            FontSize="14"
+                            FontWeight="SemiBold"
+                            Text="{Binding Game.LastMove, Converter={StaticResource MoveToString}}" />
+                        <TextBlock
+                            Margin="0,2,0,0"
+                            FontSize="11"
+                            Foreground="{StaticResource TextSecondaryBrush}"
+                            Text="{Binding Game.LastMove.ThinkingTime, Converter={StaticResource SecondsToTextTime}, StringFormat='Temps de réfléxion: {0}.'}" />
+                    </StackPanel>
+                </Border>
+
+                <!--  GAME FLOW  -->
+                <Border
+                    Margin="0,0,0,12"
+                    Padding="16"
+                    Style="{StaticResource CardStyle}">
+                    <StackPanel>
+
+                        <TextBlock Style="{StaticResource LabelStyle}" Text="Partie" />
+
+                        <TextBlock>
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat="Coup {0} / ~{1}">
+                                    <Binding Path="Game.NbMoves" />
+                                    <Binding Path="Game.AvgMoves" />
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+
+                        <TextBlock
+                            FontSize="11"
+                            Foreground="{StaticResource TextSecondaryBrush}"
+                            Text="{Binding GamePhase, StringFormat='Phase : {0}'}" />
+
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+
+        </ScrollViewer>
+
+        <!--  STATUS BAR  -->
+        <Border
+            Grid.Row="2"
+            Grid.ColumnSpan="3"
+            Height="36"
+            Background="#F3E9D2"
+            BorderBrush="{StaticResource BorderSoftBrush}"
+            BorderThickness="1">
+
+            <TextBlock
+                Margin="12,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontWeight="Bold"
+                Foreground="Red"
+                Text="{Binding StatusMessage}" />
+
+        </Border>
+
+    </Grid>
+
+</UserControl>

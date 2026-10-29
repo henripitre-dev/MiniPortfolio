@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% translate "Artistes" %}{% endblock %}
+{% block content %}
+    <h1>{% translate "Artistes" %}</h1>
+    <a href="{% url 'vinylvault:ajouter_artiste' %}" class="btn btn-primary mb-3">{% translate "+ Ajouter un artiste" %}</a>
+
+    {% if artistes %}
+    <div class="tableholder p-3 rounded-3">
+        <table class="table">
+            <thead>
+                <tr><th>{% translate "Nom" %}</th><th>{% translate "Pays" %}</th><th>{% translate "Actions" %}</th></tr>
+            </thead>
+            <tbody>
+                {% for artiste in artistes %}
+                <tr>
+                    <td>{{ artiste.nom }}</td>
+                    <td>{{ artiste.pays|default:"—" }}</td>
+                    <td>
+                        <a href="{% url 'vinylvault:modifier_artiste' pk=artiste.pk %}" class="btn btn-sm btn-outline-secondary">{% translate "Modifier" %}</a>
+                        <a href="{% url 'vinylvault:supprimer_artiste' pk=artiste.pk %}" class="btn btn-sm btn-outline-danger">{% translate "Supprimer" %}</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+        <p>{% translate "Aucun artiste enregistré." %}</p>
+    {% endif %}
+{% endblock %}

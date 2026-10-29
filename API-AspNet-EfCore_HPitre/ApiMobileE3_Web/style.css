@@ -1,0 +1,40 @@
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1 1 300px;
+}
+
+main {
+  flex: 3 1 500px; /* takes ~3x more space; wraps below when < 500px fits */
+  min-width: 0;
+}
+
+#map-grid {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 3px;
+}
+
+#map-grid > * {
+  aspect-ratio: 1/1;
+}
+
+.tile {
+  border-radius: 5%;
+  aspect-ratio: 1;
+  color: white;
+  background-color: black;
+  opacity: 100%;
+  font-size: 100%;
+}
+
+.tile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

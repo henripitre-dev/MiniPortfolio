@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SplitBillData>
+  <Participants>
+    <Participant username="Alice" passwordhash="TkDo/+DuMvpT4TkUftVZIppZMPicIgRwb8F0vrNiELM=" />
+    <Participant username="Bob" passwordhash="jQWcNkC5cYDdLuRT4g00qwyw8uzL6H0BkVqOV4ogKxE=" />
+    <Participant username="Charlie" passwordhash="Gv2olzenRfFdQoB9VPZ8gDcn11zkQ7DzpllTGziuZg8=" />
+    <Participant username="Diana" passwordhash="r8RmozaOzVcggztnD6DUDjdtbJ3G9hQG4+5JaJLy8eU=" />
+    <Participant username="MickeyMouse67" passwordhash="n/kzbfCUzfokvhq3oUJ5DJogpOOxdPlT/figfAMkokc=" />
+  </Participants>
+  <Activities>
+    <Activity name="Ski Trip" owner="Alice" description="Activité de ski" isActive="true">
+      <Participants>
+        <Ref username="Alice" />
+        <Ref username="Bob" />
+        <Ref username="Charlie" />
+      </Participants>
+      <Expenses>
+        <Expense name="Chalet" amount="1400" owner="Alice" description="Prix total du chalet" isActive="true">
+          <Participants>
+            <Ref username="Alice" />
+            <Ref username="Bob" />
+            <Ref username="Charlie" />
+            <Ref username="Diana" />
+            <Ref username="MickeyMouse67" />
+          </Participants>
+        </Expense>
+        <Expense name="Essence" amount="180" owner="Bob" description="Sans description" isActive="false">
+          <Participants>
+            <Ref username="Bob" />
+            <Ref username="Alice" />
+            <Ref username="Charlie" />
+          </Participants>
+        </Expense>
+        <Expense name="Forfaits ski" amount="300" owner="Charlie" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Charlie" />
+            <Ref username="Bob" />
+          </Participants>
+        </Expense>
+      </Expenses>
+      <Refunds />
+    </Activity>
+    <Activity name="Soirée BBQ" owner="Alice" description="Barbecue entre copains" isActive="true">
+      <Participants>
+        <Ref username="Alice" />
+        <Ref username="Bob" />
+        <Ref username="Charlie" />
+        <Ref username="Diana" />
+        <Ref username="MickeyMouse67" />
+      </Participants>
+      <Expenses>
+        <Expense name="Viande" amount="120" owner="Bob" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Bob" />
+            <Ref username="Alice" />
+            <Ref username="Charlie" />
+          </Participants>
+        </Expense>
+        <Expense name="Boissons" amount="60" owner="Charlie" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Charlie" />
+            <Ref username="Alice" />
+            <Ref username="Bob" />
+            <Ref username="Diana" />
+          </Participants>
+        </Expense>
+        <Expense name="Charbon" amount="25" owner="Diana" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Diana" />
+            <Ref username="Alice" />
+          </Participants>
+        </Expense>
+      </Expenses>
+      <Refunds />
+    </Activity>
+    <Activity name="Road Trip" owner="Bob" description="Voyage en voiture" isActive="true">
+      <Participants>
+        <Ref username="Bob" />
+        <Ref username="Alice" />
+        <Ref username="Charlie" />
+        <Ref username="Diana" />
+      </Participants>
+      <Expenses>
+        <Expense name="Essence" amount="220" owner="Bob" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Bob" />
+            <Ref username="Alice" />
+            <Ref username="Charlie" />
+          </Participants>
+        </Expense>
+        <Expense name="Snacks" amount="40" owner="Alice" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Alice" />
+            <Ref username="Charlie" />
+          </Participants>
+        </Expense>
+        <Expense name="Parking" amount="30" owner="Diana" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Diana" />
+            <Ref username="Alice" />
+          </Participants>
+        </Expense>
+      </Expenses>
+      <Refunds />
+    </Activity>
+    <Activity name="Lunch Bureau" owner="Bob" description="Lunch entre collègues" isActive="true">
+      <Participants>
+        <Ref username="Bob" />
+        <Ref username="Charlie" />
+        <Ref username="Diana" />
+      </Participants>
+      <Expenses>
+        <Expense name="Restaurant" amount="90" owner="Bob" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Bob" />
+            <Ref username="Charlie" />
+            <Ref username="Diana" />
+          </Participants>
+        </Expense>
+      </Expenses>
+      <Refunds />
+    </Activity>
+    <Activity name="Cinéma Solo" owner="Alice" description="Activité avec seul participant" isActive="false">
+      <Participants>
+        <Ref username="Alice" />
+      </Participants>
+      <Expenses>
+        <Expense name="Billet" amount="18" owner="Alice" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Alice" />
+          </Participants>
+        </Expense>
+        <Expense name="Popcorn" amount="9" owner="Alice" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Alice" />
+          </Participants>
+        </Expense>
+      </Expenses>
+      <Refunds />
+    </Activity>
+    <Activity name="Weekend Chalet" owner="Charlie" description="Weekend complet" isActive="true">
+      <Participants>
+        <Ref username="Charlie" />
+        <Ref username="Alice" />
+        <Ref username="Bob" />
+        <Ref username="Diana" />
+        <Ref username="MickeyMouse67" />
+      </Participants>
+      <Expenses>
+        <Expense name="Location" amount="900" owner="Charlie" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Charlie" />
+            <Ref username="Alice" />
+            <Ref username="Bob" />
+            <Ref username="Diana" />
+            <Ref username="MickeyMouse67" />
+          </Participants>
+        </Expense>
+        <Expense name="Courses" amount="210" owner="Diana" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Diana" />
+            <Ref username="Alice" />
+            <Ref username="Charlie" />
+          </Participants>
+        </Expense>
+        <Expense name="Bois" amount="45" owner="MickeyMouse67" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="MickeyMouse67" />
+            <Ref username="Bob" />
+          </Participants>
+        </Expense>
+        <Expense name="Essence" amount="150" owner="Alice" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Alice" />
+            <Ref username="Bob" />
+            <Ref username="Charlie" />
+          </Participants>
+        </Expense>
+      </Expenses>
+      <Refunds />
+    </Activity>
+    <Activity name="Pause Café" owner="Diana" description="Petit café rapide" isActive="true">
+      <Participants>
+        <Ref username="Diana" />
+        <Ref username="Alice" />
+      </Participants>
+      <Expenses>
+        <Expense name="Café" amount="12" owner="Diana" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Diana" />
+            <Ref username="Alice" />
+          </Participants>
+        </Expense>
+        <Expense name="Viennoiseries" amount="15" owner="Alice" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Alice" />
+            <Ref username="Diana" />
+          </Participants>
+        </Expense>
+      </Expenses>
+      <Refunds />
+    </Activity>
+    <Activity name="Ancien Voyage" owner="Alice" description="Activité terminée" isActive="false">
+      <Participants>
+        <Ref username="Alice" />
+        <Ref username="Bob" />
+        <Ref username="Charlie" />
+      </Participants>
+      <Expenses>
+        <Expense name="Hôtel" amount="500" owner="Bob" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Bob" />
+            <Ref username="Alice" />
+            <Ref username="Charlie" />
+          </Participants>
+        </Expense>
+        <Expense name="Taxi" amount="80" owner="Charlie" description="Sans description" isActive="true">
+          <Participants>
+            <Ref username="Charlie" />
+            <Ref username="Bob" />
+          </Participants>
+        </Expense>
+      </Expenses>
+      <Refunds />
+    </Activity>
+  </Activities>
+</SplitBillData>

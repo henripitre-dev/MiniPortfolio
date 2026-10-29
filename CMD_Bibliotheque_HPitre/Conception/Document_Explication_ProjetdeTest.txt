@@ -1,0 +1,43 @@
+Documentation technique des fonctions de tests 
+
+1. Tests de la classe BooksTests
+Ces tests valident la classe Livre, qui gère les informations sur les livres de la bibliothèque.
+• Constructeur_ProprietesInitialisees_Correctement : vérifie que Livre.Parse() initialise bien toutes les propriétés (Guid, titre, auteur, genre, etc.).
+• Parse_FieldsValides_RetourneLivre : teste la conversion d’un tableau de chaînes valides en instance de Livre.
+• TryParse_FieldsInvalides_RetourneNullEtErreur : s’assure qu’un jeu de données invalide retourne une erreur compréhensible.
+• IsValid_… : regroupe plusieurs tests validant les règles métier (titre vide, ISBN invalide, etc.).
+• AjouterLivre_ReturnsTrue / SupprimerLivre_ReturnsTrueIfFound : testent l’écriture et la suppression physique d’un enregistrement CSV via LibService.
+• RechercherLivre_… : vérifie la recherche par Guid ou par titre dans la liste des livres.
+
+2. Tests des classes humaines
+
+a. HumansTests (classe abstraite)
+Une classe interne TestHuman permet de tester la classe Humans :
+• Constructor_PropertiesSetCorrectly : contrôle l’initialisation des propriétés de base (Guid, Nom, Prénom).
+• IsValid_ValidFields_ReturnsTrue / IsValid_EmptyFields_ReturnsFalse : assurent la robustesse de la validation des champs.
+
+b. AuthorTests
+• Parse_FieldsValides_RetourneAuthor : teste la création d’un auteur à partir d’un tableau de champs CSV.
+• AjouterAuteur_ReturnsTrue / SupprimerAuteur_ReturnsTrueIfFound : vérifient la bonne écriture et suppression dans le fichier CSV correspondant aux auteurs.
+
+c. EmployeeTests
+• Parse_FieldsValides_RetourneEmployee : contrôle que la méthode Parse() traduit correctement les données en objet Employee.
+• AjouterEmploye_ReturnsTrue : confirme qu’un employé est ajouté dans le fichier de test.
+• SupprimerEmploye_ReturnsTrueIfFound : supprime et vérifie l’absence du Guid dans le fichier.
+
+d. MembersTests
+• Parse_FieldsValides_RetourneMembers : valide la lecture des champs d’un membre.
+• AjouterMembre_ReturnsTrue / SupprimerMembre_ReturnsTrueIfFound : testent respectivement l’ajout et la suppression d’un membre.
+
+3. Tests des classes FileWriter et FileReader
+
+a. FileWriterTests
+Ces tests assurent l’intégrité des fonctions d’écriture et de suppression sur disque :
+• EcrireLigne : vérifie que FileWriter.EcrireLigne() crée correctement le fichier et y inscrit le contenu prévu.
+• Supprimer : contrôle la suppression d’une ligne à partir d’un identifiant Guid.
+
+b. FileReaderTests
+Ils testent les fonctions de lecture et validation des fichiers CSV :
+• ConvertLinesToDataArrayList : vérifie que le contenu du fichier est correctement converti en tableau de données.
+• IsValidFile_ReturnsTrue_ForValidBookFile : s’assure qu’un fichier conforme est reconnu comme valide.
+• GetTxtFilenames_ReturnsCsvFilesOnly_WhenCsvOnlyTrue : filtre les fichiers pour ne garder que les extensions .csv.

@@ -1,0 +1,24 @@
+# Visual Studio / .NET
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.rsuser
+TestResults/
+
+# Fichier créé par Unleashed Go à la fin de chaque partie
+UNLEASHEDGO_Results.xml
+
+# Python / Django
+__pycache__/
+*.pyc
+.venv/
+venv/
+WEB_DJANGO_HPitre/Code/db.sqlite3
+WEB_DJANGO_HPitre/Code/media/
+
+# Système
+Thumbs.db
+Desktop.ini
+.DS_Store

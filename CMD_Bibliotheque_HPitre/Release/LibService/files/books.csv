@@ -1,0 +1,20 @@
+#WARNING : ANY MODIFICATION OF FILE MADE MANUALLY COULD MAKE THE FILE UNREADABLE FOR THE PROGRAM.
+###books###
+guid,title,author,genre,pubDate,isbn,bookAddon,isavailable
+3b2d50b1-c766-4415-b891-76aaf589de16,Germinal,Émile Zola,Naturalism,1885-04-26,2070378274,,true
+46ec1a2e-6ee4-4f90-b19a-2fdc4875cd06,Notre-Dame de Paris,Victor Hugo,Gothic Fiction,1831-03-16,0140443532,Audio CD,true
+6782f811-19cf-405b-bb3a-2b556f8ce8e4,L'Étranger,Albert Camus,Philosophy,1942-05-19,2070360024,Audio CD,true
+d284f7db-b0f5-44a8-be44-0ce7e64d83f2,Le Rouge et le Noir,Stendhal,Realism,1830-11-13,0140447644,USB key,true
+a724a928-eb10-4f77-8712-f7d3a2b6bc09,Thérèse Raquin,Émile Zola,Realism,1867-12-01,0140449442,eBook,true
+a724a928-eb10-4f77-8712-f7d3a2b6bc08,Thérèse Raquin,Émile Zola,Realism,1867-12-01,0140449442,eBook,false
+fa5178b3-d829-47b5-947c-4eb763a03959,Le Cid,Pierre Corneille,Tragedy,1637-01-07,2070413844,Audio CD,true
+b788b8de-afb4-43ae-b4fa-2346c79bb1d5,Phèdre,Jean Racine,Tragedy,1677-01-01,2070409171,,true
+d1b9b58e-8f02-41c9-8cde-4bc774373f2c,Les Contemplations,Victor Hugo,Poetry,1856-04-01,2253004199,eBook,true
+232710b2-63dc-45e3-86e7-2463434c8f22,La Cousine Bette,Honoré de Balzac,Realism,1846-04-09,0140443151,USB key,true
+7a5a4a71-b39f-4276-9182-cbcd1b194a64,L'Éducation sentimentale,Gustave Flaubert,Realism,1869-11-17,2070360202,,true
+acf64f23-62f5-4ade-a6ce-488f41b3a11d,Les Misérables,Victor Hugo,Historical Fiction,1862-06-30,0451525264,eBook,True
+22c8f455-bfb5-453a-95f8-e2032de395f2,Le Comte de Monte-Cristo,Alexandre Dumas,Adventure,1844-08-28,0140449264,USB key,True
+fdd44e56-2a84-4b29-9060-634bd8000ba2,Les Fleurs du mal,Charles Baudelaire,Poetry,1857-06-25,2253004197,eBook,False
+995ca35c-b23c-47b0-85ee-2c802d0c25ad,À la recherche du temps perdu,Marcel Proust,Modernism,1913-11-14,2070381523,USB key,True
+a73d0e8b-063e-42a0-bf05-ef0c3efbde50,Le Petit Prince,Antoine de Saint-Exupéry,Children's Literature,1943-04-06,0156012197,eBook,True
+###/books###
