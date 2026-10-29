@@ -3,7 +3,9 @@
 Étudiant en 3<sup>e</sup> année du DEC-BAC en Techniques de l'informatique (conception et développement d'applications) au Cégep de Chicoutimi.
 Je cherche un **stage ATE de mi-mars à mi-mai 2027** ou un **emploi à temps partiel dès janvier 2027**.
 
-henripitre.dev@gmail.com | [LinkedIn](https://www.linkedin.com/in/[ton-profil])
+Pour vous démontrer mes compétences, voici donc ce github ! Vous trouverez toutes les informations ci-bas et/ou dans chaque projet individuel.
+
+henripitre.dev@gmail.com 
 
 ## Projets
 
@@ -16,7 +18,9 @@ henripitre.dev@gmail.com | [LinkedIn](https://www.linkedin.com/in/[ton-profil])
 | [VinylVault](WEB_DJANGO_HPitre) | Site Web | Python, Django, SQLite, Bootstrap |
 | [Bibliothèque](CMD_Bibliotheque_HPitre) | Application console, en équipe | C#, .NET 8, MSTest |
 
-Chaque dossier contient le code source et un README avec les étapes pour lancer le projet. Selon le projet, on y trouve aussi une version compilée (`Release`) et les documents de conception (cahier des charges, conception, guide utilisateur, bilan).
+Il est à noter que malgré que ce soit un bon résumé, les projets démontrés ci-dessous sont sommaires et ne montrent pas absolument toutes mes compétences. Par exemple, j'ai appris à utiliser Docker, InnoSetup, Mermaid/PUML/SoftwareIdeasModeler, AJAX et une tonne d'autres produits, mais je n'ai pas pu tout inclure ici car il m'était important à mes yeux de limiter votre temps passé à comprendre ce que je sais faire.
+
+Chaque dossier contient le code source et un README avec les étapes pour lancer le projet. Selon le projet, on y trouve aussi une version compilée (`Release`) et les documents de conception (cahier des charges, conception, guide utilisateur, bilan) qui ont tous été réalisés par mes soins, m'ayant permis de développer mon sens de l'analyse et de la gestion de projets.
 
 ### [My Little RPG](API-AspNet-EfCore_HPitre)
 API qui génère les tuiles d'une carte de jeu de rôle (type de terrain tiré au hasard selon des probabilités, cases traversables ou non) et qui gère une liste de monstres. Une page Web affiche la carte et le détail de chaque tuile.
@@ -31,6 +35,8 @@ Compte de test : `admin` / `admin`, clé d'API `admin_apikey`. Base MySQL locale
 ### [Unleashed Go](WPF_GoGame_HPitre)
 Jeu de Go pour deux joueurs sur plateau 9×9 : komi, handicaps, captures, règle du ko, coups suicide refusés, calcul du territoire et chronomètre pour chaque joueur.
 
+**Les plateaux 13x13 et 19x19 ne sont pas fonctionnels, car ils n'étaient pas à implémenter lors du développement du projet.**
+
 <img src="WPF_GoGame_HPitre/docs/partie.gif" width="640" alt="Partie d'Unleashed Go avec une capture">
 
 Prêt à lancer : `Release/GoGame.exe`. [Détails](WPF_GoGame_HPitre/README.md)
@@ -40,7 +46,7 @@ Application pour partager les dépenses d'un groupe : activités, dépenses rép
 
 <img src="WPF_SplitBill_HPitre/docs/connexion.gif" width="640" alt="Connexion à SplitBill et vue d'ensemble">
 
-Réalisé avec Tommy-Frédéric Bernaquez. Compte de test : `Alice` / `alice123`. [Détails](WPF_SplitBill_HPitre/README.md)
+(Réalisé avec Tommy-Frédéric Bernaquez). Compte de test : `Alice` / `alice123`. [Détails](WPF_SplitBill_HPitre/README.md)
 
 ### [VinylVault](WEB_DJANGO_HPitre)
 Site Web pour gérer une collection de vinyles : artistes, albums et chansons, avec la collection personnelle de chaque membre (possédé ou souhaité, note, coup de cœur). Permissions par groupe et interface en français et en anglais.
@@ -86,3 +92,5 @@ Ensuite, dans MySQL Workbench, ouvrir chaque script avec *File > Run SQL Script*
 ---
 
 Projets réalisés dans le cadre de mes études au Cégep de Chicoutimi.
+Faute de temps et de souci de ponçage, aucun projet personnel n'est inclus,
+Mais plusieurs sont en cours actuellement !
